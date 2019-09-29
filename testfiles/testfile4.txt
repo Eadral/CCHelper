@@ -1,0 +1,29 @@
+int func_a (int a, char b) {
+    a = a + 1;
+    b = 'x';
+    return (2);
+}
+
+char func_b (int a, char b) {
+    a = a + 1;
+    b = 'x';
+    return ('a');
+}
+
+void func_va (int a, char b) {
+    a = a + 1;
+    b = 'x';
+}
+
+void func_vb (int a, char b) {
+    a = a + 1;
+    b = 'x';
+}
+
+void main() {
+    const int fu = 2;
+  
+    printf("hoho");
+    
+}
+

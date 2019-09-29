@@ -1,0 +1,306 @@
+
+const int a0 = 0,a1 = +0,a2 = -0,bc = 21,bc1 = +12,_b2c = -56789;
+const char _ = '+',_0 = '-',_e = '*',e1e = '/',f_f00 = '_',f1f1f_ = 'a',f2f2f2 = 'A',gg0 = '0',g0_0g = '5';
+
+
+int x,x_1,xx2[0],x3xx[20];
+char y,y_1,y2y[0], yyy3[20];
+
+int r(){
+    const int b = 0;
+    int a;
+    char c;
+    if(b){
+        printf("in function r judge if value b : ",b);
+    }
+    a = 10;
+    if(a>=b){
+        printf("in function r judge if a>=b , a:%d",a);
+        printf("in function r judge if a>=b , b:%d",b);
+    } 
+    if(a>b){
+        printf("in function r judge if a>b , a:%d",a);
+        printf("in function r judge if a>b , b:%d",b);
+    } else{
+
+    }
+    if(a<=b){
+        printf("in function r judge if a<=b , a:%d",a);
+        printf("in function r judge if a<=b , b:%d",b);
+    }
+    if(a<b){
+        printf("in function r judge if a<b , a:%d",a);
+        printf("in function r judge if a<b , b:%d",b);
+    } else{
+        return (b);
+    }
+    if(a!=b){
+        printf("in function r judge if a!=b , a:%d",a);
+        printf("in function r judge if a!=b , b:%d",b);
+    }
+    if(a==b){
+        printf("in function r judge if a==b , a:%d",a);
+        printf("in function r judge if a==b , b:%d",b);
+    }
+    c = 'z';
+    if(c){
+        printf("in function r judge if c, c:%c",c);
+    }
+    if(a+b>c+1){
+        printf("in function r judge if a+b>c, c:%c",c);
+    } else {
+         printf("in function r judge if a+b>c else");
+    }
+    if(1-(2*c+a/b)+a-'2'){
+        printf("in function r judge if a+b>c else, a:%d",a);
+        printf("in function r judge if a+b>c else, b:%d",b);
+        printf("in function r judge if a+b>c else, c:%d",c);
+    } else {
+        printf("in function r judge if a+b>c else");
+    }
+    return (+a);
+}
+
+int r1(int d1){
+    const int n = 10;
+    int i;
+    int a[10]; 
+    i = d1;
+    while(i<n){
+        a[i] = i;
+        printf("in function r1 judge while, printf i:",i);
+        i=i+1;
+    }
+
+    i=0;
+    do{
+        printf("in function r1 judge do-while, printf i:",i);
+        i=i+1;
+    }while(i<=n);
+
+    for(i=0;i!=n;i=i+1){
+        printf("in function r1 judge for add i, printf i:",i);
+    }
+
+    for(i=23;i>=n;i=i-1){
+        printf("in function r1 judge for sub i, printf i:",i);
+    }
+
+    for(i=n-1;i>=0;i=i-1){
+        printf(a[i]);
+    }
+    return (a[0]+a[1]);
+}
+
+int r2(char c2){   
+    const int a = 1;
+    const int b = 2;
+    const char c = 'c';
+    int i;
+    int x;
+    char y;
+    int d[10];
+    char e[10];
+    for(i = 0;i<10;i=i+1){
+        d[i] = i*i+i;
+        e[i] = 'a';
+    }
+    x = 10;
+    x = a;
+    x = a + b;
+    x = 1 - b;
+    x = a * b;
+    x = a / 2;
+    x = a + 'c';
+    x = a * 'c';
+    x = 1+a*b;
+    x = 1/c - a/b;
+    x = a * (a + 1) + (3 / (b+c) + c*(a*c))*(b+6)/32;
+    x = r()*r1(a/b);
+    x = 2*a + r1(a*b-1) + r1(a+b);
+    x = 233 * d[1];
+    x = 333 * e[2] + d[3];
+    
+    return (+x*y);
+}
+
+int r3(int d3, char c3){ 
+    int a;
+    int b;
+    char c;
+    scanf(a);
+    scanf(a,b);
+    scanf(c);
+    scanf(d3,c3);
+    scanf(a,b,c);
+    return (a * b / c + d3 - c3);
+}
+
+char r4(){  
+    const int a = 1;
+    const char b = 'c';
+    printf("string");
+    printf(1+a*b);
+    printf((a+b)/(a*b+1));
+    printf("string",a-(b+2));
+    return (b);
+}
+
+int r5(int d5, char c5){
+    const int a = 2;
+    const char b = '3';
+    char c;
+    int d;
+    int d1;
+    int e;
+    c = c5;
+    d = a + a * b;
+    d1 = d5;
+    e = a - a / b;
+    r();
+    r1(d);
+    r3(d5,c);
+    r4();
+    return (a*(a-3)-b*(a+1)/2);
+}
+
+int r6(int a){
+	const char b = 'b';
+	return (-a+b);
+}
+
+void v(){
+    const int b = 0;
+    int a;
+    char c;
+    if(b){
+        printf("in function r judge if value b : ",b);
+    }
+    a = 10;
+    if(a>=b){
+        printf("in function r judge if a>=b , a:%d",a);
+        printf("in function r judge if a>=b , b:%d",b);
+    } 
+    if(a>b){
+        printf("in function r judge if a>b , a:%d",a);
+        printf("in function r judge if a>b , b:%d",b);
+    } else{
+		printf("judge else");
+    }
+    if(a<=b){
+        printf("in function r judge if a<=b , a:%d",a);
+        printf("in function r judge if a<=b , b:%d",b);
+    }
+    if(a<b){
+        printf("in function r judge if a<b , a:%d",a);
+        printf("in function r judge if a<b , b:%d",b);
+    } else{
+        
+    }
+    if(a!=b){
+        printf("in function r judge if a!=b , a:%d",a);
+        printf("in function r judge if a!=b , b:%d",b);
+    }
+    if(a==b){
+        printf("in function r judge if a==b , a:%d",a);
+        printf("in function r judge if a==b , b:%d",b);
+    }
+    c = 'z';
+    if(c){
+        printf("in function r judge if c, c:%c",c);
+    }
+    if(a+b>c+1){
+        printf("in function r judge if a+b>c, c:%c",c);
+    } else {
+         printf("in function r judge if a+b>c else");
+    }
+    if(1-(2*c+a/b)+a-'2'){
+        printf("in function r judge if a+b>c else, a:%d",a);
+        printf("in function r judge if a+b>c else, b:%d",b);
+        printf("in function r judge if a+b>c else, c:%d",c);
+    } else {
+        printf("in function r judge if a+b>c else");
+    }
+}
+
+void v1(int d1){
+    const int n = 10;
+    int i;
+    int a[10]; 
+    i = d1;
+    while(i<n){
+        a[i] = i;
+        printf("in function r1 judge while, printf i:",i);
+        i=i+1;
+    }
+
+    i=0;
+    do{
+        printf("in function r1 judge do-while, printf i:",i);
+        i=i+1;
+    }while(i<=n);
+
+    for(i=0;i!=n;i=i+1){
+        printf("in function r1 judge for add i, printf i:",i);
+    }
+
+    for(i=23;i>=n;i=i-1){
+        printf("in function r1 judge for sub i, printf i:",i);
+    }
+
+    for(i=n-1;i>=0;i=i-1){
+        printf(a[i]);
+    }
+}
+
+void v2(char c2){
+    const int a = 1;
+    const int b = 2;
+    const char c = 'c';
+    int i;
+    int x;
+    char y;
+    int d[10];
+    char e[10];
+    for(i = 0;i<10;i=i+1){
+        d[i] = i*i+i;
+        e[i] = 'a';
+    }
+    x = 10;
+    x = a;
+    x = a + b;
+    x = 1 - b;
+    x = a * b;
+    x = a / 2;
+    x = a + 'c';
+    x = a * 'c';
+    x = 1+a*b;
+    x = 1/c - a/b;
+    x = a * (a + 1) + (3 / (b+c) + c*(a*c))*(b+6)/32;
+    x = r()*r1(a/b);
+    x = 2*a + r1(a*b-1) + r1(a+b);
+    x = 233 * d[1];
+    x = 333 * e[2] + d[3];
+}
+
+void v3(char c3, int d3){
+    v();
+    v2(c3);
+}
+
+void v4(){
+	return;
+}
+
+void main(){
+    const int d = 1;
+    const char c = 'c';
+    int a;
+    int b;
+    scanf(a);
+    scanf(a,b);
+    printf("string");
+    printf(1+a*b);
+    printf((a+b)/(a*b+1));
+    printf("string",a-(b+2));
+}

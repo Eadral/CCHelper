@@ -1,0 +1,28 @@
+const int A = 1;
+const char X = 'X', Y = 'Y';
+const int t1 = 1, t2 = 2;
+
+int func_a (int a, char b) {
+    a = a + 1;
+    b = 'x';
+    return (2);
+}
+
+char func_b (int a, char b) {
+    a = a + 1;
+    b = 'x';
+    return ('a');
+}
+
+
+void main() {
+	const int fu = 2;
+	const int fzzu = 2;
+	int zzz;
+	int zzzz;
+	
+    printf("hoho");
+
+
+}
+

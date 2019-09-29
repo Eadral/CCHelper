@@ -1,0 +1,29 @@
+const int x = 2;
+
+void func_va (int a, char b) {
+    a = a + 1 + x;
+    b = 'x';
+}
+
+void func_vb (int a, char b) {
+    a = a + 1;
+    b = 'x';
+}
+
+void func_vbx (int a) {
+    a = a + 1;
+}
+
+void func_vbxe () {
+    
+}
+
+void main() {
+    
+    printf("hoho");
+	func_vbx(2);
+	func_vbxe();
+	
+    
+}
+

@@ -1,0 +1,42 @@
+
+const int a0 = 0,a1 = +0,a2 = -0,bc = 21,bc1 = +12,_b2c = -56789;
+
+int x,x_1,xx2[0],x3xx[20];
+
+
+int r6(int a0){
+	if(a0>0){
+		if(a1>0){
+			do {
+				bc = bc - 1;
+			} while(bc>0)
+		} else {
+			printf("first else");
+		}
+	} else{
+		printf("second else");
+	}
+}
+
+
+
+void v4(){
+	if(a0>0){
+		if(a1>0){
+			while(bc >0){
+				bc = bc - 1;
+			}
+		} else {
+			printf("first else");
+		}
+	} else{
+		{;}
+		{
+			printf("second else");
+		}
+	}
+}
+
+void main(){
+    {{{;}}}
+}

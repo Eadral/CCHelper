@@ -1,0 +1,127 @@
+const int A = 1;
+const char X = 'X';
+int a;
+int a1;
+int aa[5];
+int aac[5];
+char b;
+char bb[5];
+int Z;
+int z;
+int e1, e2, e3[5];
+
+int func_a (int a, char b) {
+    a = a + 1;
+    b = 'x';
+    b = '+';
+    b = '*';
+    b = '1';
+    b = '2';
+    b = 'x';
+    b = 'x';
+    b = 'x';
+    return (2);
+}
+
+char func_b (int a, char b) {
+    a = 0;
+    a = a + 1;
+    b = 'x';
+    return ('a');
+}
+
+void func_va (int a, char b) {
+    a = a + 1;
+    b = 'x';
+}
+
+void func_vn () {
+    return;
+}
+
+void func_none() {
+
+}
+
+void func_vb (int a, char b) {
+    a = -a + 1;
+    a = (1 + 'a') * 2 + 1;
+    b = 'x';
+}
+
+void main() {
+    const int fu = 2;
+    int zzz;
+    a1 = 1 + func_a(2, '3');
+    func_va(2, '3');
+    a = 2;
+    aa[2] = 3;
+    scanf(a);
+	scanf(b);
+    scanf(a, a1);
+    printf("hoho");
+    printf("%d", a);
+    printf(a);
+
+    a = 1 + 2 - 1 * 3 / 1;
+
+    a = 0;
+    while (a < 5) {
+        a = a + 1;
+    }
+
+    a = 0;
+    do {
+        a = a + 1;
+    } while(a < 5);
+
+    for (a = 0; a < 5; a = a + 1) {
+        a1 = a1 + 1;
+    }
+    for (a = 5; a >= 0; a = a - 1) {
+        a1 = a1 + 1;
+    }
+
+    if (a < 0) {
+        a1 = 0;
+    } else {
+        a1 = 1;
+    }
+    if (a > 0) {
+        a1 = 0;
+    }
+    if (a <= 0) {
+        a1 = 0;
+    }
+    if (a >= 0) {
+        a1 = 0;
+    }
+    if (a != 0) {
+        a1 = 0;
+    }
+    if (a == 0) {
+        a1 = -5;
+    }
+    if (a) {
+        a1 = +5;
+        a1 = + a1 * aa[2] * 1 * 'x' * func_a(2, '3')  + (2 * 3) + 2;
+        a1 = - a1 * aa[2] * 1 * 'x' * func_a(2, '3')  + (2 * 3) + 2;
+        a1 = + aa[2] * 1 * 'x' * func_a(2, '3')  + (2 * 3) + 2;
+        a1 = + a1 * 1 * 'x' * func_a(2, '3')  + (2 * 3) + 2;
+        a1 = + a1 * aa[2] * 'x' * func_a(2, '3')  + (2 * 3) + 2;
+        a1 = + a1 * aa[2] * 1 * func_a(2, '3')  + (2 * 3) + 2;
+        a1 = + a1 * aa[2] * 1 * 'x' + (2 * 3) + 2;
+        a1 = + a1 * aa[2] * func_a(2, '3')  + (2 * 3) + 2;
+        a1 = - a1 * aa[2] * func_a(2, '3')  + (2 * 3) + 2;
+        a1 = - -1 * aa[2] * func_a(2, '3')  + (2 * 3) + 2;
+        a1 = - +1 * aa[2] * func_a(2, '3')  + (2 * 3) + 2;
+        a1 = + -1 * aa[2] * func_a(2, '3')  + (2 * 3) + 2;
+        a1 = + +1 * aa[2] * func_a(2, '3')  + (2 * 3) + 2;
+        a1 = - -0 * aa[2] * func_a(2, '3')  + (2 * 3) + 2;
+        a1 = - +0 * aa[2] * func_a(2, '3')  + (2 * 3) + 2;
+        a1 = - -1123 * aa[2] * func_a(2, '3')  + (2 * 3) + 2;
+        a1 = - +13 * aa[2] * func_a(2, '3')  + (2 * 3) + 2;
+    }
+
+}
+

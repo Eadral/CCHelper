@@ -1,0 +1,9 @@
+void main() {
+   
+    int zzz;
+    printf("hoho");
+	
+
+    
+}
+
