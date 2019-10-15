@@ -1,8 +1,8 @@
+import operator
 import os
 import shutil
-import time
-import operator
 import sys
+import time
 
 testfile_dir = "testfiles"
 outputfile_dir = "outputfiles"
@@ -37,13 +37,14 @@ def get_exe_output(dir_name, testfile, redirect=False):
     os.system("{} > output.txt < testfile.txt".format(exe_path) if redirect else exe_path)
     os.chdir("..")
     rnd = time.time()
-    outputfile_name = "output_{}.txt".format(rnd)
+    outputfile_name = "output_{}.txt".format(dir_name)
     shutil.copy(os.path.join(dir_name, "output.txt"), os.path.join(outputfile_dir, outputfile_name))
     lines = open(os.path.join(outputfile_dir, outputfile_name), encoding="utf-8").readlines()
     lines = list(map(lambda x: x, lines))
     while len(lines) > 0 and lines[-1] == "":
         del lines[-1]
     return lines
+
 
 def pat(redirect):
     ncases = 0
@@ -64,8 +65,17 @@ def pat(redirect):
                     npassed += 1
                 else:
                     print("failed: {}, comparing {} and {}".format(testfile, lhs, rhs), file=sys.stdout)
+                    length = min(len(lhs_out), len(rhs_out))
+                    for i in range(length):
+                        if lhs_out[i] != rhs_out[i]:
+                            print("{}:{} != {}:{}".format(lhs, i, rhs, i))
+                            print("\t{}".format(lhs_out[i]))
+                            print("\t{}".format(rhs_out[i]))
+                            exit(-1)
+                    exit(-1)
 
     print("passed: {}/{}".format(npassed, ncases))
 
+
 if __name__ == "__main__":
-    pat(redirect=False)
+    pat(redirect=True)
