@@ -25,7 +25,7 @@ def pat(redirect):
                     print("passed: {}, compared {} and {}".format(testfile, lhs, rhs))
                     npassed += 1
                 else:
-                    print("failed: {}, comparing {} and {}".format(testfile, lhs, rhs), file=sys.stdout)
+                    print("failed: {}, comparing {} and {}".format(testfile, lhs, rhs))
                     length = min(len(lhs_out), len(rhs_out))
                     for i in range(length):
                         if lhs_out[i] != rhs_out[i]:

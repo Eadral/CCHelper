@@ -24,7 +24,7 @@ def unit(dir_name, test_set):
             print("passed: {}".format(test))
             npassed += 1
         else:
-            print("failed: {}".format(test), file=sys.stdout)
+            print("failed: {}".format(test))
             length = min(len(lhs_out), len(rhs_out))
             for i in range(length):
                 if lhs_out[i] != rhs_out[i]:
