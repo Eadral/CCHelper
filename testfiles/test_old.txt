@@ -191,7 +191,7 @@ char Test_Return_Char() {
   return(CharVariable);
   return(CharArray[1]);
   return(CharConstant);
-  return(Test_Return_Char);
+  return(Test_Return_Char());
   return('a');
 }
 
@@ -202,7 +202,7 @@ int Test_Return_Int() {
 
   return(IntConstant);
   return(IntVariable);
-  return(Test_Return_Int);
+  return(Test_Return_Int());
   return(IntArray[1]);
   return(IntArray[(IntVariable)]);
   return(1);
