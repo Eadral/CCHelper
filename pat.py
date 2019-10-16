@@ -29,7 +29,7 @@ def pat(redirect):
                     length = min(len(lhs_out), len(rhs_out))
                     for i in range(length):
                         if lhs_out[i] != rhs_out[i]:
-                            print("{}:{} != {}:{}".format(lhs, i, rhs, i))
+                            print("different line {}:{} != {}:{}".format(lhs, i, rhs, i))
                             print("\t{}".format(lhs_out[i]))
                             print("\t{}".format(rhs_out[i]))
                             exit(-1)
