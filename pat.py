@@ -6,7 +6,7 @@ from utils import get_dirs, get_testfiles, get_exe_output, testfile_dir, outputf
 
 
 def pat(redirect):
-    if os.path.exists(outputfile_dir):
+    if not os.path.exists(outputfile_dir):
         os.mkdir(outputfile_dir)
     ncases = 0
     npassed = 0
