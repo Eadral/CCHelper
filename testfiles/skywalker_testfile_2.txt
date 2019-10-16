@@ -1,0 +1,99 @@
+int max_num, min_num;
+int num_list[20];
+char mode;
+
+int add(int a, int b) {
+    return (a + b);
+}
+
+int sub(int a, int b) {
+    return (a + (-b));
+}
+
+int minus(int a) {
+    return (-a);
+}
+
+int mult(int a, int b) {
+    int c;
+    c = -a * (-b);
+    return (-(-(+(-c))));
+}
+
+int div(int a, int b) {
+    return (a / b);
+}
+
+void test_ops() {
+    const int int_1 = 1;
+    const int int_2 = 2;
+    const int int_30 = 30;
+    if (int_1 + int_2 == add(int_1, int_2))
+    printf("testAdd ok");
+    if (int_1 - int_2 == sub(int_1, int_2))
+    printf("testSub ok");
+    if (int_1 * int_2 == mult(int_1, int_2))
+    printf("testMult ok");
+    if (int_1 / int_2 == div(int_1, int_2))
+    printf("testDiv ok");
+    if (-int_1== minus(int_1));
+    printf("testMinus ok");
+}
+
+void test_factor() {
+    const int Int_10 = 10;
+    int Int_30;
+    int Int_100;
+    int test;
+    Int_30 = 30;
+    Int_100 = 100;
+    test = Int_30 + Int_100;
+    printf("test 130", test);
+    test = sub(Int_100, Int_30);
+    printf("test 70", test);
+    test = mult(test, add(Int_100, Int_30));
+    printf("test 9100", test);
+    test = Int_10 + div((Int_30 + Int_10), Int_10);
+    printf("test 14", test);
+    test = sub(Int_100, Int_30) + div(Int_30, Int_10);
+    printf("test 73", test);
+}
+
+void test_state() {
+    const int Int_3 = 3;
+    int pos_a;
+    int nev_a;
+    pos_a = 3;
+    nev_a = -(3);
+    printf("test 3", pos_a);
+    printf("test 0", +pos_a + nev_a);
+    printf("test -6", -pos_a + nev_a);
+    printf("test -6", +sub(-pos_a, -nev_a) - add(pos_a, nev_a));
+}
+
+void test_item() {
+    const int Int_5 = 5;
+    int pos_5;
+    int nev_5;
+    int test;;;
+    pos_5 = +5;
+    nev_5 = -5;
+    test = pos_5 * nev_5;
+    printf("test -25", test);
+    test = add(pos_5, nev_5) * nev_5;
+    printf("test 0", test);
+    test = sub(pos_5, nev_5) * nev_5;
+    printf("test 50", test);
+    test = nev_5;
+    printf("test -5", test);
+    test = div(pos_5, Int_5) * nev_5;
+    printf("test -5", test);
+    test = (mult(pos_5, nev_5) / div(pos_5, nev_5) + Int_5) * add(pos_5, -nev_5) / Int_5;
+    printf("test 60", test);
+}
+
+void main() {
+    test_state();
+    test_item();
+    test_factor();
+}

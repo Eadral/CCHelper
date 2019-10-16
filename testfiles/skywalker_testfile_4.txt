@@ -1,0 +1,42 @@
+
+void no_const_func() {
+	int i;;;
+	i = 3;
+	printf(i);
+}
+
+void no_var_func() {
+	const int t = 10;
+	printf(t);
+}
+
+void no_sentence_func() {
+	const int t = 10;
+	int c, d;
+}
+
+void nothing_func() {
+	;;;
+}
+
+void nothing_func1() {
+	;
+}
+
+int scan(char a) {
+	return (a - '0');
+}
+
+void error_judge_func1() {
+	const int c = 3;;
+}
+
+void main() {
+	no_const_func();
+	no_var_func();
+	no_sentence_func();
+	nothing_func();
+	nothing_func1();
+	scan('d');
+	error_judge_func1();
+}

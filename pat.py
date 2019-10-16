@@ -19,7 +19,7 @@ def get_dirs():
 
 
 def get_testfiles():
-    return os.listdir(testfile_dir)
+    return list(filter(lambda x: x.endswith(".txt"), os.listdir(testfile_dir)))
 
 
 def get_exe_path(dir_name):
