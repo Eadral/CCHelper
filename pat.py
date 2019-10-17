@@ -1,6 +1,8 @@
 import operator
 import sys
 import os
+from colorama import init, Fore, Back, Style
+init(autoreset=True)
 
 from utils import get_dirs, get_testfiles, get_exe_output, testfile_dir, outputfile_dir
 
@@ -22,20 +24,23 @@ def pat(redirect):
                 rhs_out = get_exe_output(rhs, os.path.join(testfile_dir, testfile))
 
                 if operator.eq(lhs_out, rhs_out):
-                    print("passed: {}, compared {} and {}".format(testfile, lhs, rhs))
+                    print(Fore.GREEN + "passed: {}, compared {} and {}".format(testfile, lhs, rhs))
                     npassed += 1
                 else:
-                    print("failed: {}, comparing {} and {}".format(testfile, lhs, rhs))
+                    print(Fore.RED + "failed: {}, comparing {} and {}".format(testfile, lhs, rhs))
                     length = min(len(lhs_out), len(rhs_out))
-                    for i in range(length):
-                        if lhs_out[i] != rhs_out[i]:
-                            print("different line {}:{} != {}:{}".format(lhs, i, rhs, i))
-                            print("\t{}".format(lhs_out[i]))
-                            print("\t{}".format(rhs_out[i]))
-                            exit(-1)
-                    exit(-1)
+                    for k in range(length):
+                        if lhs_out[k] != rhs_out[k]:
+                            print(Fore.RED + "different line {}:{} != {}:{}".format(lhs, k, rhs, k))
+                            print(Fore.RED + "\t{}".format(lhs_out[k]))
+                            print(Fore.RED + "\t{}".format(rhs_out[k]))
+                            # exit(-1)
+                    # exit(-1)
 
-    print("passed: {}/{}".format(npassed, ncases))
+    if npassed == ncases:
+        print(Fore.GREEN + "passed: {}/{}".format(npassed, ncases))
+    else:
+        print(Fore.RED + "passed: {}/{}".format(npassed, ncases))
 
 
 if __name__ == "__main__":
