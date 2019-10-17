@@ -34,4 +34,4 @@ def unit(dir_name, test_set):
 
 
 if __name__ == "__main__":
-    unit("zyc", "test_set_error")
+    unit(sys.argv[1], sys.argv[2])
