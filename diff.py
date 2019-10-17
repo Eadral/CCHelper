@@ -17,7 +17,7 @@ def diff(file_lhs, file_rhs):
         length = min(len(lhs_out), len(rhs_out))
         for k in range(length):
             if lhs_out[k] != rhs_out[k]:
-                print(Fore.RED + "different line {}:{} != {}:{}".format(file_lhs, k, file_rhs, k))
+                print(Fore.RED + "different line {}:{} != {}:{}".format(file_lhs, k+1, file_rhs, k+1))
                 print(Fore.RED + "\t{}".format(lhs_out[k]))
                 print(Fore.RED + "\t{}".format(rhs_out[k]))
                 # exit(-1)

@@ -28,7 +28,7 @@ def unit(dir_name, test_set):
             length = min(len(lhs_out), len(rhs_out))
             for i in range(length):
                 if lhs_out[i] != rhs_out[i]:
-                    print("found {} while except {} at line {}".format(lhs_out[i], rhs_out[i], i))
+                    print("found {} while except {} at line {}".format(lhs_out[i], rhs_out[i], i+1))
                     exit(-1)
             exit(-1)
 

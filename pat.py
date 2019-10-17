@@ -31,7 +31,7 @@ def pat(redirect):
                     length = min(len(lhs_out), len(rhs_out))
                     for k in range(length):
                         if lhs_out[k] != rhs_out[k]:
-                            print(Fore.RED + "different line {}:{} != {}:{}".format(lhs, k, rhs, k))
+                            print(Fore.RED + "different line {}:{} != {}:{}".format(lhs, k+1, rhs, k+1))
                             print(Fore.RED + "\t{}".format(lhs_out[k]))
                             print(Fore.RED + "\t{}".format(rhs_out[k]))
                             # exit(-1)
