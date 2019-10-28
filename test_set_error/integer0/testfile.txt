@@ -1,0 +1,6 @@
+const int x1 = 0;
+const int x2 = 123;
+const int x3 = 01;
+const int x0 = 0;
+
+void main() {}

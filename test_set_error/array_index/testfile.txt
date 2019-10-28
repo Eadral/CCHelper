@@ -1,0 +1,8 @@
+int x1[1];
+int x2[0];
+
+void main() {
+	int x3[0];
+	int x4[5];
+
+}

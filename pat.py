@@ -4,16 +4,15 @@ import os
 from colorama import init, Fore, Back, Style
 init(autoreset=True)
 
-from utils import get_dirs, get_testfiles, get_exe_output, testfile_dir, outputfile_dir
+from utils import get_testfiles, get_exe_output, outputfile_dir
 
-
-def pat(redirect):
+def pat(testfile_dir, redirect, dirs):
     if not os.path.exists(outputfile_dir):
         os.mkdir(outputfile_dir)
     ncases = 0
     npassed = 0
-    dirs = get_dirs()
-    for testfile in get_testfiles():
+    # dirs = get_dirs()
+    for testfile in get_testfiles(testfile_dir):
         for i in range(0, len(dirs)):
             for j in range(i + 1, len(dirs)):
                 ncases += 1
@@ -27,13 +26,13 @@ def pat(redirect):
                     print(Fore.GREEN + "passed: {}, compared {} and {}".format(testfile, lhs, rhs))
                     npassed += 1
                 else:
-                    print(Fore.RED + "failed: {}, comparing {} and {}".format(testfile, lhs, rhs))
+                    print(Fore.LIGHTRED_EX + "failed: {}, comparing {} and {}".format(testfile, lhs, rhs))
                     length = min(len(lhs_out), len(rhs_out))
                     for k in range(length):
                         if lhs_out[k] != rhs_out[k]:
-                            print(Fore.RED + "different line {}:{} != {}:{}".format(lhs, k+1, rhs, k+1))
-                            print(Fore.RED + "\t{}".format(lhs_out[k]))
-                            print(Fore.RED + "\t{}".format(rhs_out[k]))
+                            print(Fore.LIGHTRED_EX + "different line {}:{} != {}:{}".format(lhs, k+1, rhs, k+1))
+                            print(Fore.LIGHTRED_EX + "\t{}".format(lhs_out[k]))
+                            print(Fore.LIGHTRED_EX + "\t{}".format(rhs_out[k]))
                             # exit(-1)
                     # exit(-1)
 
@@ -44,4 +43,4 @@ def pat(redirect):
 
 
 if __name__ == "__main__":
-    pat(redirect=True)
+    pat(testfile_dir=sys.argv[1], redirect=True, dirs=sys.argv[2:])

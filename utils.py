@@ -2,24 +2,9 @@ import os
 import shutil
 import time
 
-testfile_dir = "testfiles"
 outputfile_dir = "outputfiles"
 
-
-def get_dirs():
-    dirs = []
-    for name in os.listdir("."):
-        if os.path.isdir(name) \
-                and not name.startswith(".") \
-                and not name.startswith("test_set_error") \
-                and not name.startswith("_"):
-            dirs.append(name)
-    dirs.remove(testfile_dir)
-    dirs.remove(outputfile_dir)
-    return dirs
-
-
-def get_testfiles():
+def get_testfiles(testfile_dir):
     return list(filter(lambda x: x.endswith(".txt"), os.listdir(testfile_dir)))
 
 
