@@ -1,0 +1,19 @@
+const int ZERO = 0, ONE = +1, ALL = -1234567890;
+const char c = 'c', add = '+', mul = '*', dig = '1';
+const char bigchar = 'H';
+
+void donothing1()
+{
+	;
+}
+
+int add_one(int n)
+{
+	return (n + 1);
+}
+
+void main()
+{
+	int i, n, j, arr[0], j2;
+	return;
+}

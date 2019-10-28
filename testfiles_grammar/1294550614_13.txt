@@ -1,0 +1,19 @@
+int n, arr[64];
+char str[128], cccc;
+
+void donothing1()
+{
+	;
+}
+
+char getc(char c)
+{
+	return (c);
+}
+
+void main()
+{
+	const int n = 2, i = 0;
+	cccc = getc('f');
+	scanf(cccc);
+}

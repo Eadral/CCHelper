@@ -1,0 +1,26 @@
+const int pi=3;
+
+int sum1(int a1,int b1)
+{
+    const char acm='/',acmn='C';
+    const int we=3;
+    int Win;
+    return (a1+b1);
+}
+
+void main()
+{
+    int n_1,c1,C_2,CHar,int_n;
+    char a;
+    CHar=-5;
+    int_n=0;
+    scanf(a);
+    printf("oK",+CHar-int_n);
+    if((c1+C_2)==sum1(c1,C_2))
+        printf("yes,");
+    n_1=sum1(19,20);
+    printf(n_1);
+    printf(pi/2);
+    printf("hello~");
+    printf("%d",pi-3);
+}

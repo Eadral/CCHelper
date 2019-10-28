@@ -1,0 +1,58 @@
+const int ZERO = 0, ONE = +1, ALL = -1234567890;
+const char c = 'c', add = '+', mul = '*', dig = '1';
+const char bigchar = 'H';
+
+int n, arr[64];
+char str[128];
+
+int sum(int x1, int x2)
+{
+	return (x1 + x2);
+}
+
+void donothing1()
+{
+
+}
+
+void main()
+{
+	const char charchar = '_';
+	const int n = 2;
+	int i;
+	int j;
+	int j2;
+
+	if (i < n) {
+		if (i > n)
+			;
+		else
+			;
+	}
+	while (i != n) {
+		do {
+			;
+		} while (i - i)
+
+		do {
+			;
+		} while (i == 100)
+
+		for (j = 2; j >= 0; j = j - 1) {
+			;
+		}
+		for (j = 2; j <= 5; j = j + 2) {
+			;
+		}
+		arr[0] = 0;
+	}
+
+	j2 = +1 + 2 * 3 / 4 * sum(1, 2);
+	j2 = -1 + arr[0] * (j2 + 'j');
+	donothing1();
+	
+	scanf(j2, j);
+	printf("EMMM", j2);
+	printf("emmm 2';.,/-*+");
+	printf(j + j2);
+}

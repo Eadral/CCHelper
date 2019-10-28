@@ -1,0 +1,56 @@
+void begin(){
+    return;
+}
+
+int cal(int a,char op,int b){
+    const int aaa=1;
+    if(op=='+')
+        return (a+b);
+    if(op=='-')
+        return (a-b);
+    if(op=='*')
+        return (a*b);
+    if(op=='/')
+        return (a/b);
+    return (-1);
+}
+
+int convert(char ch){
+    int n;
+    int s,t;
+
+    n='a'-'A';
+
+    s=(ch-'A')*(ch-'Z');
+    t=(ch-'a')*(ch-'z');
+    
+    if(s==0){
+        return (ch+n);
+    }else if(t==0){
+        return (ch-n);
+    }else{
+        return (+ch+n-n);
+    }
+}
+
+void end(){
+    printf("program end...");
+    return;
+}
+
+void main(){
+    begin();
+
+    printf("hello world...");
+    printf("1+1=",cal(1,'+',1));
+    printf(",");
+    printf("2-2=",cal(2,'-',2));
+    printf(",");
+    printf("3*3=",cal(3,'*',3));
+    printf(",");
+    printf("4/4=",cal(4,'/',4));
+    printf("...");
+
+    end();
+    return ;
+}

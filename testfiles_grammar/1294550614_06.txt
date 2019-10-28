@@ -1,0 +1,52 @@
+const int first=1,second = -2 , zero =0;
+const char __first_char__ = 'b',__second_char__='_';
+
+char __str[10],one;
+int __times_fibo__;
+
+int fibo_1(int n){
+  const int fiboOne = 1, fiboTwo = 1;
+  int i, Fibo[1024];
+  for(i=0;i<n;i = i + 1) {
+    if(i==-0)
+      Fibo[i]=fiboOne;
+    else {
+      if(i == 2-1)
+        Fibo[i] = fiboTwo;
+      else {
+        Fibo[i +fiboOne - 1 +0] = Fibo[i-fiboOne] + Fibo[i + (-1 * 2*fiboTwo)];
+      }
+    }
+  }
+  for(i=n-1;i>=0;i=i-1);
+  if(i) printf("wrong run time.");
+  return (Fibo[n-1]);
+}
+
+char get_char() {
+  return ('z');
+}
+
+void main()  {
+  const char cc = 'w';
+  const int up_limit = 1024, number = +100;
+  int n, result, arr[1024];
+  char c;
+  result = - arr[1024] * 2;
+  result = (1 + 1) * fibo_1(3);
+  c = '5';
+  c = '*';
+  c = '/';
+  c = get_char();
+  result = 0;
+  scanf(n);
+  if(n<=0) {
+    printf("n is low than zero\n");
+    return;
+  } else if(n> result + up_limit) {
+    printf("n is upper than up_limit + 10\n");
+    return;
+  }
+  result =fibo_1(n);
+  printf("the result is:%d.\n", result);
+}

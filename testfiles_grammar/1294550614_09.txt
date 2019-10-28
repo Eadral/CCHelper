@@ -1,0 +1,13 @@
+int var;
+
+void func_1() {
+  ;
+}
+
+void main() {
+  const int a =3;
+  if(a == 2);
+  while(a < 3);
+  func_1();
+  return;
+}

@@ -1,0 +1,52 @@
+const int v4=4;
+const int v1=10,v2=20,v3=-3;
+const char u4='4';
+const char u1='1',u2='2',u3='3';
+    char a;
+    char b,c;
+    char d,e[100];
+    char f[190],g;
+    char h[108],i[10];
+    char j[10];
+void begin(){
+    return ;
+}
+
+void f1(int a,char b){;}
+void f2(int a,int b){;}
+void f3(char a,int b){;}
+void f4(char a,char b){;}
+void f5(){;}
+int f6(){return (2);}
+int fibo(int n){
+    if(n<1){
+        return (1);
+    }
+    return (fibo(n-1)+fibo(n-2)); 
+}
+
+
+int end(){
+    return (2);
+}
+void main(){
+    int a;
+    int b,c;
+    int d,e[100];
+    int f[100],g;
+    int h[10],ff[10];
+    int i;
+    int j[10];
+    
+    a=a*a+a+1-'a'+e[10]*f[33]+f6();
+
+    begin();
+        printf("fibo(1-10):");
+    for(i=0;i<10;i=i+1){
+        printf(fibo(i));
+        printf(",");
+    }
+    end();
+    return;;
+    
+}

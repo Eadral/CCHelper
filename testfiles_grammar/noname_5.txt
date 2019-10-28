@@ -1,0 +1,82 @@
+const int MAXSIZE=100;
+int va[100],vb[100],vc[100];
+
+void begin(){
+    printf("start...");
+    return;
+}
+void input(int n){
+    int i,tmp;
+    printf("please input ",2*n);
+    printf(" nums(cut by space):");
+    for(i=0;i<n;i=i+1){
+        scanf(tmp);
+        va[i]=tmp;
+    }
+    for(i=0;i<n;i=i+1){
+        scanf(tmp);
+        vb[i]=tmp;
+    }
+    printf("input end.");
+    return;
+}
+void operate(char op){
+    int i,n;
+    n=MAXSIZE;
+
+    if(op=='+'){
+        for(i=0;i<n;i=i+1){
+            vc[i]=va[i]+vb[i];
+        }
+    }else if(op=='-'){
+        for(i=0;i<n;i=i+1){
+            vc[i]=va[i]-vb[i];
+        }
+    }else if(op=='*'){
+        for(i=0;i<n;i=i+1){
+            vc[i]=va[i]*vb[i];
+        }
+    }else{
+        printf("op is wrong!");
+    }
+    return;
+}
+
+void end(){
+    printf("end...");
+    return;
+}
+void output(int n){
+    int i;
+    for(i=0;i<n;i=i+1){
+        printf(vc[i]);
+    }
+    return ;
+
+}
+void main(){
+    char next,op;
+    int n;
+
+    next='n';
+    
+    begin();
+    
+    do{
+        printf("input n:");
+        scanf(n);
+
+        input(n);
+
+        printf("input op(+-*):");
+        scanf(op);
+        operate(op);
+        output(n);
+
+        printf("continue?(y/n)");
+        scanf(next);
+    }while(next-'n')
+
+    end();
+    return;
+}

@@ -1,0 +1,7 @@
+const char a = '+', b = '-', c = 'a', d = '5';
+
+
+
+void main(){ 
+  printf(1 + 2);
+}

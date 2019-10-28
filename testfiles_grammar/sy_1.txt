@@ -1,0 +1,30 @@
+int arr[10],array[9];
+char array1[5],read;
+
+int fact1(int n)
+{
+    const int dnf=12;
+    if(n==1)
+        return (1);
+    else
+        return (n*fact1(n+(-(-1))));
+}
+
+void array_ac()
+{
+    arr[1]=0;
+    arr[2*2]=-2;
+    if((arr[++1])<=(arr[4]))
+    	printf("The smaller is:",arr[1]);
+    else 
+    	printf(arr[4]);
+}
+void main()
+{
+    int n;
+    int n1;;;
+    array_ac();
+    scanf(n);
+    printf(fact1(n));
+    printf("success:",fact1(1)+fact1(4-1));
+}

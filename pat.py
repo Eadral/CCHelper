@@ -33,8 +33,14 @@ def pat(testfile_dir, redirect, dirs):
                             print(Fore.LIGHTRED_EX + "different line {}:{} != {}:{}".format(lhs, k+1, rhs, k+1))
                             print(Fore.LIGHTRED_EX + "\t{}".format(lhs_out[k]))
                             print(Fore.LIGHTRED_EX + "\t{}".format(rhs_out[k]))
-                            # exit(-1)
-                    # exit(-1)
+                            exit(-1)
+                    if len(lhs_out) > len(rhs_out):
+                        print(Fore.LIGHTRED_EX + "found {} while except {} at line {}"
+                              .format("'{}'".format(lhs_out[length]), "NOTHING", length + 1))
+                    else:
+                        print(Fore.LIGHTRED_EX + "found {} while except {} at line {}"
+                              .format("NOTHING", "'{}'".format(rhs_out[length]), length + 1))
+                    exit(-1)
 
     if npassed == ncases:
         print(Fore.GREEN + "passed: {}/{}".format(npassed, ncases))

@@ -1,0 +1,18 @@
+char a;
+char f(){
+    return (a);
+}
+void main(){
+    const int i=+1;
+    const int j=1,k=3;
+    int a;
+    int b;
+    int v1,v2,v3;
+    b=1;
+    for(a=10;a>0;a=a-1){
+        b=b+1;
+        scanf(v1,v2,v3);
+    }
+
+    return ;
+}

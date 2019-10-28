@@ -1,0 +1,72 @@
+void main()
+{
+
+    while(i>12)
+        ;
+    while(i<101)
+    {    
+        printf(i);
+    }
+
+    while(s>-2)
+    {
+        while(s<i)
+            printf(s);
+    }
+    while(i>=s)
+    {
+        for(i=100;i>s;i=i-2)
+        { 
+            if(i==(s/2))
+                i=i/2;
+                printf(i);
+        }
+     
+    }
+
+    while(i==s)
+   {
+      do{
+         i=i+1;
+       }while(i>50)
+    }
+
+    do{
+       ;
+    }while(0)
+
+    do{
+       for(i=1;i<10;i=i+1)
+         printf(i);    
+    }while(i>50)
+    
+    do{ 
+       do{
+         if(i>3)
+            i=i+2;
+       }while(i<200)
+    }while(0)
+
+    for(j=0;j<20;j=j+1);
+    for(j=20;j>0;j=j-1)
+    {
+       printf(j);
+    }
+    for(i=0;i<10;i=i+1)
+    {
+         for(j=1;j<20;j=j+1)
+            ;
+    }
+    
+    for(j=0;j<20;j=j+1)
+    {
+        while(1)
+            printf(j+1);
+    }
+    for(j=0;j<20;j=j+1)
+    {
+         do{
+            j=j+3; 
+          }while(j<10)
+    }       
+}

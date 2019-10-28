@@ -1,0 +1,36 @@
+const char ba='a',ba2='+',ch='8',ch1='/';
+const int high=20;
+char length[10];
+int array1[10],str[10],X,Sum_1;
+
+char sum(char ch1)
+{
+    int ads;
+    printf(ch1);
+    printf('*');
+    return (ch1);
+}
+
+void main()
+{
+    int i;
+    array1[1]=2;
+    array1[2]=--19;
+    printf((X+ch));
+    sum(ba);
+    for(i=0;i<10;i=i+1)
+    {
+        str[i]=i;
+    }
+    if(str[2]!=str[2-(+2)]);
+    if((array1[1]-array1[2])<=0)
+        printf(array1[1]);
+    else
+        printf(array1[2]);
+
+    if(ba!=ba2)
+        printf("Not same!");
+
+    if(ba==ba2)
+        printf("Same!");
+}
