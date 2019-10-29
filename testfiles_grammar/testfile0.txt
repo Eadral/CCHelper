@@ -3,8 +3,8 @@ const int a0 = 0,a1 = +0,a2 = -0,bc = 21,bc1 = +12,_b2c = -56789;
 const char _ = '+',_0 = '-',_e = '*',e1e = '/',f_f00 = '_',f1f1f_ = 'a',f2f2f2 = 'A',gg0 = '0',g0_0g = '5';
 
 
-int x,x_1,xx2[0],x3xx[20];
-char y,y_1,y2y[0], yyy3[20];
+int x,x_1,xx2[1],x3xx[20];
+char y,y_1,y2y[1], yyy3[20];
 
 int r(){
     const int b = 0;

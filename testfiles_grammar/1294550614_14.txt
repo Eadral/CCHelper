@@ -14,6 +14,6 @@ int add_one(int n)
 
 void main()
 {
-	int i, n, j, arr[0], j2;
+	int i, n, j, arr[1], j2;
 	return;
 }

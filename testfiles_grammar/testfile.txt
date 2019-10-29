@@ -1,7 +1,8 @@
 
-const int a0 = 0,a1 = +0,a2 = -0,bc = 21,bc1 = +12,_b2c = -56789;
+const int a0 = 0,a1 = +0,a2 = -0,bc1 = +12,_b2c = -56789;
+int bc;
 
-int x,x_1,xx2[0],x3xx[20];
+int x,x_1,xx2[1],x3xx[20];
 
 
 int r6(int a0){
@@ -16,6 +17,7 @@ int r6(int a0){
 	} else{
 		printf("second else");
 	}
+	return (0);
 }
 
 

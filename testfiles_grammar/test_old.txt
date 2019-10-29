@@ -16,11 +16,11 @@ void TokenTest_String() {
 }
 
 void TokenTest_Number() {
-  printf(000000);
-  printf(000001);
+  printf(0);
+  printf(1);
   printf(123456);
-  printf(-00000);
-  printf(+00000);
+  printf(-0);
+  printf(+0);
   printf(+12345);
   printf(-12345);
 }
@@ -234,6 +234,7 @@ int Test_If(int Number) {
   if (Number + 1 <= 2 * Number) {
     printf("Condition ::= Expr CompareOp Expr");
   }
+  return (0);
 }
 
 void Test_For() {
