@@ -1,0 +1,13 @@
+char a(int x, int y) {
+	return ('x');
+}
+
+void b(int x, int y) {
+
+}
+
+void main() {
+	
+	b('2', a(3, 4, 5));
+
+}

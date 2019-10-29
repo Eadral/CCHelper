@@ -1,0 +1,21 @@
+int a() {
+
+}
+
+int f1() {
+
+	return ('x');
+	
+}
+
+char f2() {
+
+
+	return (2);
+	
+}
+
+void main() {
+
+	return (2);
+}

@@ -1,0 +1,28 @@
+void f0() {
+
+	return ;
+}
+
+void f1() {
+
+	return (0);
+}
+
+void f2() {
+
+	return ('x');
+}
+
+int a() {
+	return (0);
+}
+
+void f3() {
+
+
+	return (a() + 2);
+}
+
+
+
+void main() {}

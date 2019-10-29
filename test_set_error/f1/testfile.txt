@@ -1,0 +1,22 @@
+int ia, ib;
+char ca, cb;
+
+void main() {
+	
+	if (ia > ib);
+	if (ia == ib);
+	if (ia != ib);
+	if (ia <= ib);
+	
+	if (ca == cb);
+	if (ca != cb);
+	
+	if (ca > cb);
+	if (ca >= cb);
+	
+	if (ia == ca);
+	if (ia != cb);
+	if (ia >= cb);
+	if (ia <= cb);
+	
+}

@@ -1,0 +1,12 @@
+
+char p() {
+    return ('x');
+}
+
+void sum(int a, int b) {
+
+}
+
+void main () {
+    sum(1, sum(p() + 3));
+}
