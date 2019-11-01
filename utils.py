@@ -14,17 +14,17 @@ def get_exe_path(dir_name):
             return name
 
 
-def get_exe_output(dir_name, testfile, redirect=False):
+def get_exe_output(dir_name, testfile, outputname, redirect=False):
     shutil.copy(testfile, os.path.join(dir_name, "testfile.txt"))
     exe_path = get_exe_path(dir_name)
-    if os.path.exists(os.path.join(dir_name, "output.txt")):
-        os.remove(os.path.join(dir_name, "output.txt"))
+    if os.path.exists(os.path.join(dir_name, outputname)):
+        os.remove(os.path.join(dir_name, outputname))
     os.chdir(dir_name)
     os.system("{} > output.txt < testfile.txt".format(exe_path) if redirect else exe_path)
     os.chdir("..")
     rnd = time.time()
     outputfile_name = "output_{}.txt".format(dir_name)
-    shutil.copy(os.path.join(dir_name, "output.txt"), os.path.join(outputfile_dir, outputfile_name))
+    shutil.copy(os.path.join(dir_name, outputname), os.path.join(outputfile_dir, outputfile_name))
     lines = open(os.path.join(outputfile_dir, outputfile_name), encoding="utf-8").readlines()
     lines = remove_space(lines)
     return lines

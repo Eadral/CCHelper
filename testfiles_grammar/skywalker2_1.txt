@@ -39,7 +39,7 @@ void main()
 	aa = 6;
 	printf("!@#$%%abcd114514ABCD963287~;: ", fact(aa));
 	ar[d*e+6*(minus_two+b-1)] = fun2(x-r, aa, b, e, c, minus_two) ;
-	printf((ar[ZeRo/fact(4)]));
+	printf((ar[zero/fact(4)]));
 	ar[1] = '0';
 	aa = -b * (ar[1] + rt15) + (c - e * 9) + 2 * 'm';
 	printf(aa);

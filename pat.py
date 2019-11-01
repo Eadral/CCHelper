@@ -19,8 +19,8 @@ def pat(testfile_dir, redirect, dirs):
                 lhs = dirs[i]
                 rhs = dirs[j]
 
-                lhs_out = get_exe_output(lhs, os.path.join(testfile_dir, testfile))
-                rhs_out = get_exe_output(rhs, os.path.join(testfile_dir, testfile))
+                lhs_out = get_exe_output(lhs, os.path.join(testfile_dir, testfile), "output.txt", True)
+                rhs_out = get_exe_output(rhs, os.path.join(testfile_dir, testfile), "output.txt", True)
 
                 if operator.eq(lhs_out, rhs_out):
                     print(Fore.GREEN + "passed: {}, compared {} and {}".format(testfile, lhs, rhs))

@@ -18,7 +18,7 @@ def unit(dir_name, test_set):
         testfile_name = os.path.join(test_set, test, "testfile.txt")
         output_name = os.path.join(test_set, test, "output.txt")
 
-        lhs_out = get_exe_output(dir_name, testfile_name)
+        lhs_out = get_exe_output(dir_name, testfile_name, "error.txt")
         rhs_out = remove_space(open(output_name).readlines())
 
         if operator.eq(lhs_out, rhs_out):

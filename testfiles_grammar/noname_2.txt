@@ -4,13 +4,13 @@ void begin(){
 
 int cal(int a,char op,int b){
     const int aaa=1;
-    if(op=='+')
+    if((op)==('+'))
         return (a+b);
-    if(op=='-')
+    if((op)==('-'))
         return (a-b);
-    if(op=='*')
+    if((op)==('*'))
         return (a*b);
-    if(op=='/')
+    if((op)==('/'))
         return (a/b);
     return (-1);
 }

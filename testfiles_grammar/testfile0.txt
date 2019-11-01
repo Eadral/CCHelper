@@ -43,7 +43,7 @@ int r(){
         printf("in function r judge if a==b , b:%d",b);
     }
     c = 'z';
-    if(c){
+    if((c)){
         printf("in function r judge if c, c:%c",c);
     }
     if(a+b>c+1){
@@ -206,7 +206,7 @@ void v(){
         printf("in function r judge if a==b , b:%d",b);
     }
     c = 'z';
-    if(c){
+    if((c)){
         printf("in function r judge if c, c:%c",c);
     }
     if(a+b>c+1){

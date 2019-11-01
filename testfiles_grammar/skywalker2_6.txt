@@ -109,10 +109,10 @@ void main(){
         
         if( 3 > 5 )
             printf("error8");
-        T9 = 9;
-        c3 = '3';
+        t9 = 9;
+        C3 = '3';
         C4 = '4';
-        if(C4-c3+T9 != 10)
+        if(C4-C3+t9 != 10)
             printf("error9");
             
     }

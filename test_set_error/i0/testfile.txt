@@ -1,0 +1,32 @@
+const int p = 3;
+
+char f() {
+	return ('x');
+}
+
+void main() {
+	int x[5];
+	int y;
+	char c1, c2[3];	
+	
+	
+	y = x[c1];
+	y = x[c2[0]];
+	y = x[f()];
+	y = x['1'];
+	
+	x[c1] = 1;
+	x[c2[0]] = 1;
+	x[f()] = 1;
+	x['1'] = 1;
+	
+	y = x[c1 + 1];
+	y = x[c2[0] + 0];
+	y = x[f() + y];
+	y = x[('1')];
+	
+	y = x[y];
+	
+	
+	
+}

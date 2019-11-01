@@ -24,15 +24,15 @@ void operate(char op){
     int i,n;
     n=MAXSIZE;
 
-    if(op=='+'){
+    if((op)==('+')){
         for(i=0;i<n;i=i+1){
             vc[i]=va[i]+vb[i];
         }
-    }else if(op=='-'){
+    }else if((op)==('-')){
         for(i=0;i<n;i=i+1){
             vc[i]=va[i]-vb[i];
         }
-    }else if(op=='*'){
+    }else if((op)==('*')){
         for(i=0;i<n;i=i+1){
             vc[i]=va[i]*vb[i];
         }

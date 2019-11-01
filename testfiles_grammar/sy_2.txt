@@ -28,9 +28,9 @@ void main()
     else
         printf(array1[2]);
 
-    if(ba!=ba2)
+    if((ba)!=(ba2))
         printf("Not same!");
 
-    if(ba==ba2)
+    if((ba)==(ba2))
         printf("Same!");
 }

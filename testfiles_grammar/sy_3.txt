@@ -1,6 +1,6 @@
 void main()
 {
-
+	int i, j, s;
     while(i>12)
         ;
     while(i<101)

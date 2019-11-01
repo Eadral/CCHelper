@@ -1,0 +1,14 @@
+int x;
+
+void main() {
+	const int x1 = 2;
+	const int x2 = x;
+	const int x3 = 1 + 2;
+	const int x4 = x + 1;
+	
+	const char c1 = 'x';
+	const char c2 = 'x' + 2;
+	const char c3 = 2;
+	const char c4 = ('x');
+
+}

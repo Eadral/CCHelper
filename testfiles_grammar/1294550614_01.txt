@@ -7,11 +7,11 @@ void main () {
         ;
     }
     else {
-        while (c)
+        while ((c))
             ;
     }
     do an[0] = 1 ;
-    while (c != c);
+    while ((c) != (c));
     for(n=0;n < 2; n = n + 1) {
         scanf(dd);
         printf(dd);
