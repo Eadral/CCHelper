@@ -1,0 +1,6 @@
+int test;
+void main(){
+    printf("Hello World");
+    scanf(test);
+    printf(test);
+}

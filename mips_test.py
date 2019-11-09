@@ -2,9 +2,12 @@ import operator
 import os
 import sys
 
-from utils import get_mips_output, remove_space
 from colorama import init, Fore
+
+from utils import get_mips_output, remove_space
+
 init(autoreset=True)
+
 
 def get_test_names(test_set):
     return os.listdir(test_set)
@@ -32,7 +35,7 @@ def unit(dir_name, test_set):
             for i in range(length):
                 if lhs_out[i] != rhs_out[i]:
                     print(Fore.LIGHTRED_EX + "found {} while except '{}' at line {}"
-                          .format("'{}'".format(lhs_out[i]), "'{}'".format(rhs_out[i]), i+1))
+                          .format("'{}'".format(lhs_out[i]), "'{}'".format(rhs_out[i]), i + 1))
                     exit(-1)
             if len(lhs_out) > len(rhs_out):
                 print(Fore.LIGHTRED_EX + "found {} while except {} at line {}"
