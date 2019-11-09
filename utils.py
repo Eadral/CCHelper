@@ -4,6 +4,7 @@ import time
 
 outputfile_dir = "outputfiles"
 
+
 def get_testfiles(testfile_dir):
     return list(filter(lambda x: x.endswith(".txt"), os.listdir(testfile_dir)))
 
@@ -28,6 +29,23 @@ def get_exe_output(dir_name, testfile, outputname, redirect=False):
     lines = open(os.path.join(outputfile_dir, outputfile_name), encoding="utf-8").readlines()
     lines = remove_space(lines)
     return lines
+
+
+def get_mips_output(dir_name, test, outputname="mips.txt"):
+    shutil.copy(os.path.join(test, "testfile.txt"), os.path.join(dir_name, "testfile.txt"))
+    exe_path = get_exe_path(dir_name)
+    if os.path.exists(os.path.join(dir_name, outputname)):
+        os.remove(os.path.join(dir_name, outputname))
+    os.chdir(dir_name)
+    os.system(exe_path)
+    os.chdir("..")
+    rnd = time.time()
+    shutil.copy(os.path.join(dir_name, outputname), "mips.asm")
+    shutil.copy(os.path.join(test, "input.txt"), "input.txt")
+    os.system("java -jar mars.jar nc ic mips.asm < input.txt > output.txt")
+    lines = open("output.txt", encoding="utf-8").readlines()
+    lines = remove_space(lines)
+    return lines[:-1], int(lines[-1])
 
 
 def remove_space(lines):
