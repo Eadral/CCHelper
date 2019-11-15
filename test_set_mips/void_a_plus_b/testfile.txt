@@ -2,7 +2,7 @@
 void a_plus_b(int a, int b) {
     int s;
     s = a + b;
-    print(s);
+    printf(s);
 }
 
 void main() {
