@@ -1,0 +1,12 @@
+
+void a_plus_b(int a, int b) {
+    int s;
+    s = a + b;
+    print(s);
+}
+
+void main() {
+    a_plus_b(2, 3);
+    a_plus_b(4, 5);
+
+}
