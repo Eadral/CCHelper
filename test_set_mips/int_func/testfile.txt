@@ -1,0 +1,8 @@
+int plus(int a, int b) {
+    return (a+b);
+}
+
+void main() {
+    printf(plus(1, 2));
+    printf(plus(3, 4));
+}

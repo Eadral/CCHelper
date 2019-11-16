@@ -1,0 +1,13 @@
+void main() {
+    int a, b;
+    int i;
+    a = 0;
+    b = 1;
+    for (i = 1; i <= 4; i=i+1) {
+        a = a + i;
+        b = b * i;
+    }
+    printf(a);
+    printf(b);
+
+}

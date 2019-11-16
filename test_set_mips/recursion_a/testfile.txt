@@ -1,0 +1,9 @@
+void foo(int x) {
+    printf(x);
+    if (x > 0)
+        foo(x-1);
+}
+
+void main() {
+    foo(2);
+}
