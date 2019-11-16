@@ -1,0 +1,10 @@
+void main() {
+    int x, y;
+    x = 4;
+    y = 3;
+    if (x > y)
+        printf("x > y");
+    else
+        printf("panic!");
+    printf("end");
+}

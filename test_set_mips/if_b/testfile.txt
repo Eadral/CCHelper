@@ -1,0 +1,51 @@
+void main() {
+    int c0, c1, c2, c3;
+    c0 = 0;
+    c1 = 1;
+    c2 = 2;
+    c3 = 3;
+    
+    if (c3 > c2)
+        printf("ok");
+    else
+        printf("error");
+
+    if (c1 < c2)
+        printf("ok");
+    else
+        printf("error");
+
+    if (c3 >= c2)
+        printf("ok");
+    else
+        printf("error");
+
+    if (c1 <= c2)
+        printf("ok");
+    else
+        printf("error");
+
+    if (c3 >= 3)
+        printf("ok");
+    else
+        printf("error");
+
+    if (2 <= c2)
+        printf("ok");
+    else
+        printf("error");
+
+    
+    if (c3 != c2)
+        printf("ok");
+    else
+        printf("error");
+
+    if (c1 == 1)
+        printf("ok");
+    else
+        printf("error");
+
+    
+
+}
