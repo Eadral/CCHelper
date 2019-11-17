@@ -1,0 +1,10 @@
+int a[10];
+
+void main() {
+    int i;
+    a[1] = 1;
+    a[2] = 2;
+
+    printf(a[1] + a[2]);
+
+}

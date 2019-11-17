@@ -1,0 +1,22 @@
+
+void inner_merge_sort(int start, int length) {
+    int tmp, mid;
+    printf("start: ", start);
+    printf("length: ", length);
+    if (length <= 1) 
+        return;
+    if (length == 2) {
+        return;
+    }
+    mid = length / 2;
+    printf("mid: ", mid);
+    inner_merge_sort(start, mid);
+    inner_merge_sort(start + mid, length - mid);
+
+}
+
+void main() {
+
+    inner_merge_sort(0, 4);
+
+}
