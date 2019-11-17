@@ -1,0 +1,10 @@
+void main() {
+    int i;
+    int s;
+    i = 0;
+    s = 0;
+    while (i < 5) {
+        s = s + i;
+    }
+    printf(s);
+}

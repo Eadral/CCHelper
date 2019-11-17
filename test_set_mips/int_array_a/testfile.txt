@@ -1,0 +1,17 @@
+int a1[10];
+
+void main() {
+    int a2[10];
+    int a;
+
+    scanf(a);
+    a1[3] = a;
+    scanf(a);
+    a2[4] = a;
+
+    printf(a1[3]);
+    printf(a2[4]);
+
+    printf(a1[3] + a2[4]);
+
+}
