@@ -1,0 +1,8 @@
+char c1;
+
+void main() {
+    char c2;
+    scanf(c1, c2);
+    printf(c1);
+    printf(c2);
+}

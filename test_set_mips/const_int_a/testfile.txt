@@ -1,0 +1,11 @@
+const int t = 10;
+
+void main() {
+    
+    const int x = 3;
+    const int y = 4;
+    int z;
+    printf(x);
+    z = x + y + t;
+    printf(z);
+}
