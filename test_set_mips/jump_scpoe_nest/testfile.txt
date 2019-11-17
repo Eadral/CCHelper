@@ -1,0 +1,11 @@
+void main() {
+    int i;
+    int t;
+    for (i = 0; i <= 10; i=i+1) {
+        t = i / 2 * 2;
+        if (i == t) {
+            printf(i);
+        }
+    }
+
+}

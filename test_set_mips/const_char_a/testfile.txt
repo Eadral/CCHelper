@@ -1,0 +1,11 @@
+const char y = 'y';
+
+void main() {
+    
+    const char x = 'x';
+    char z;
+    z = 'z';
+    printf(x);
+    printf(y);
+    printf(z);
+}
