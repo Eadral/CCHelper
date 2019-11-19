@@ -1,0 +1,21 @@
+const int _begini = 0, _endi = +18, testfg = -6;
+void main(){ 
+int a, i;
+printf("_begini = ", _begini);
+scanf(i);
+a = i;
+printf(a);
+a = testfg;
+printf(a);
+a = a + _endi + testfg;
+printf(a);
+printf("Let's have fun.");
+a = 1;
+a = (a +1700+5) * 1000;
+printf(a);
+printf("My stunum is : ");
+printf("17060000");
+a = (_begini + _endi) * testfg / 2;
+printf("a is : ", a);
+printf("Congratulations");
+}
