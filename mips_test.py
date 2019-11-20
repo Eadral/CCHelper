@@ -34,14 +34,14 @@ def run_unit(dir_name, test, test_set):
             length = min(len(lhs_out), len(rhs_out))
             for i in range(length):
                 if lhs_out[i] != rhs_out[i]:
-                    print(Fore.LIGHTRED_EX + "found {} while except '{}' at line {}"
+                    print(Fore.LIGHTRED_EX + "found {} while expected '{}' at line {}"
                           .format("'{}'".format(lhs_out[i]), "'{}'".format(rhs_out[i]), i + 1))
-                    break
+                    return False
             if len(lhs_out) > len(rhs_out):
-                print(Fore.LIGHTRED_EX + "found {} while except {} at line {}"
+                print(Fore.LIGHTRED_EX + "found {} while expected {} at line {}"
                       .format("'{}'".format(lhs_out[length]), "NOTHING", length + 1))
             elif len(lhs_out) < len(rhs_out):
-                print(Fore.LIGHTRED_EX + "found {} while except {} at line {}"
+                print(Fore.LIGHTRED_EX + "found {} while expected {} at line {}"
                       .format("NOTHING", "'{}'".format(rhs_out[length]), length + 1))
             return False
             # exit(-1)

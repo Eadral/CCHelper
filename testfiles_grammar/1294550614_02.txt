@@ -1,40 +1,19 @@
-const int aan = 112, bn = -23;
-const int aaaaa = 1;
-const char cc = '2';
-int fibo(int a,int  n) {
-    int sum;
-    sum = 0;
-    while (sum < n) {
-        sum = sum*2 +1;
-    }
-    return (sum);
-}
+::basic_ostream<_CharT, _Traits>& __os,
+		   const __gnu_cxx::hypergeometric_distribution<_UIntType1>&
+		   __x);
 
-void main () {
-    const int a1 = 1, a2 = +2,b1= -3;
-    const char c = 'c',d = '2';
-    int b2, c1, sdhsa, an[10], bn[2], n;
-    char cn[3], dd,dn[5];
-    if (-a1 + b1 <= a2) {
-        ;
-    }
-    else {
-        while ((c) == (d)) ;
-    }
-    do an[0] = 1;
-    while ((c) != (c));
-    for(n=0;n < 2; n = n + 1) {
-        scanf(dd);
-        printf(d);
-    }
-   an[1]= a1/a2;
- c1 = 5;
-    if(c1 > 4) {
-    b2 = +b1-a1/(c1); 
-	}
-    printf("dhsd.,./");
-    printf(a1 + b1);
-    b2 = fibo(a1, a2);
-    printf(b2*a2);
-    return;
-}
+      /**
+       * @brief Extracts a %hypergeometric_distribution random number
+       * distribution @p __x from the input stream @p __is.
+       *
+       * @param __is An input stream.
+       * @param __x  A %hypergeometric_distribution random number generator
+       *             distribution.
+       *
+       * @returns The input stream with @p __x extracted or in an error
+       *          state.
+       */
+      template<typename _UIntType1, typename _CharT, typename _Traits>
+	friend std::basic_istream<_CharT, _Traits>&
+	operator>>(std::basic_istream<_CharT, _Traits>& __is,
+		   __gnu_cxx::hypergeometric_distribution<_UIntType1>& __x);

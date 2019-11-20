@@ -1,58 +1,22 @@
-int arr[1000];
-
-void begin(){
-    printf("this program will input n and then input n nums and sort them -> print");
-    return ;
-}
-void input(int n){
-    int i,temp;
-    for(i=0;i<n;i=i+1){
-        scanf(temp);
-        arr[i]=temp;
-    }
-    return;
-}
-
-int sort(int n){
-    int i,j,index,min;
-
-    if(n>1000){
-        printf("n>1000, error");
-        return (-1);
-    }
-    if(n<1){
-        printf("n<1, error");
-        return (-1);
-    }
-
-    for(i=0;i<n;i=i+1){
-        min=arr[i];
-        index=i;
-        for(j=i;j<n;j=j+1){
-            if(arr[j]<min){
-                min=arr[j];
-                index=j;
-            }
-        }
-        if(i!=index){
-            min=arr[i];
-            arr[i]=arr[index];
-            arr[index]=min;
-        }
-    }
-    ;
-
-    return (0);
-}
-
-void main(){
-    int n;
-    
-    
-
-    begin();
-    scanf(n);
-   input(n);
-   sort(n);
-   return ;
-}
+CONFIG.C_ALL_OUTPUTS_2" value="0"/>
+      </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="iomodule" ip_interface="GPIO1">
+      <user_parameters>
+        <user_parameter name="CONFIG.C_USE_GPI1" value="1"/> 
+        <user_parameter name="CONFIG.C_GPI1_SIZE" value="4"/> 
+      </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="iomodule" ip_interface="GPIO2">
+      <user_parameters>
+        <user_parameter name="CONFIG.C_USE_GPI2" value="1"/> 
+        <user_parameter name="CONFIG.C_GPI2_SIZE" value="4"/> 
+      </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="iomodule" ip_interface="GPIO3">
+      <user_parameters>
+        <user_parameter name="CONFIG.C_USE_GPI3" value="1"/> 
+        <user_parameter name="CONFIG.C_GPI3_SIZE" value="4"/> 
+      </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="iomodule" ip_interface="GPIO4">

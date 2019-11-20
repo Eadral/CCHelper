@@ -1,82 +1,31 @@
-const int MAXSIZE=100;
-int va[100],vb[100],vc[100];
-
-void begin(){
-    printf("start...");
-    return;
-}
-void input(int n){
-    int i,tmp;
-    printf("please input ",2*n);
-    printf(" nums(cut by space):");
-    for(i=0;i<n;i=i+1){
-        scanf(tmp);
-        va[i]=tmp;
-    }
-    for(i=0;i<n;i=i+1){
-        scanf(tmp);
-        vb[i]=tmp;
-    }
-    printf("input end.");
-    return;
-}
-void operate(char op){
-    int i,n;
-    n=MAXSIZE;
-
-    if((op)==('+')){
-        for(i=0;i<n;i=i+1){
-            vc[i]=va[i]+vb[i];
-        }
-    }else if((op)==('-')){
-        for(i=0;i<n;i=i+1){
-            vc[i]=va[i]-vb[i];
-        }
-    }else if((op)==('*')){
-        for(i=0;i<n;i=i+1){
-            vc[i]=va[i]*vb[i];
-        }
-    }else{
-        printf("op is wrong!");
-    }
-    return;
-}
-
-void end(){
-    printf("end...");
-    return;
-}
-void output(int n){
-    int i;
-    for(i=0;i<n;i=i+1){
-        printf(vc[i]);
-    }
-    return ;
-
-}
-void main(){
-    char next,op;
-    int n;
-
-    next='n';
-    
-    begin();
-    
-    do{
-        printf("input n:");
-        scanf(n);
-
-        input(n);
-
-        printf("input op(+-*):");
-        scanf(op);
-        operate(op);
-        output(n);
-
-        printf("continue?(y/n)");
-        scanf(next);
-    }while(next-'n')
-
-    end();
-    return;
-}
+ip_interface="GPIO1">
+        <user_parameters>
+          <user_parameter name="CONFIG.USE_GPI1" value="1"/> 
+          <user_parameter name="CONFIG.GPI1_SIZE" value="3"/> 
+        </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="microblaze_mcs" ip_interface="GPIO2">
+        <user_parameters>
+          <user_parameter name="CONFIG.USE_GPI2" value="1"/> 
+          <user_parameter name="CONFIG.GPI2_SIZE" value="3"/> 
+        </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="microblaze_mcs" ip_interface="GPIO3">
+        <user_parameters>
+          <user_parameter name="CONFIG.USE_GPI3" value="1"/> 
+          <user_parameter name="CONFIG.GPI3_SIZE" value="3"/> 
+        </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="microblaze_mcs" ip_interface="GPIO4">
+        <user_parameters>
+          <user_parameter name="CONFIG.USE_GPI4" value="1"/> 
+          <user_parameter name="CONFIG.GPI4_SIZE" value="3"/> 
+        </user_parameters>
+    </ip>
+  </ip_preset>
+  <ip_preset preset_proc_name="push_buttons_5bits_preset">
+    <ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO">
+      <user_parameters>
+        <user_parameter name="CONFIG.C_GPIO_WIDTH" value="5"/> 
+	<user_parameter name="CONFIG.C_ALL_INPUTS" value="1"/>
+        <user_parameter name="CONFIG.
