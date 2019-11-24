@@ -1,0 +1,12 @@
+int a;
+int foo() {
+    a = a + 1;
+    return (a);
+}
+
+void main() {
+    int b;
+    a = 0;
+    b = a + foo();
+    printf(b);
+}
