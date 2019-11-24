@@ -1,0 +1,9 @@
+test readarray:
+please input a positive integer as array size:
+please input the array elements:
+element: 3
+element: 2
+element: 1
+element: 6
+element: 7
+array size: 5

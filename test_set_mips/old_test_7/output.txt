@@ -1,0 +1,11 @@
+test ctypes:
+expect 0: 0
+expect 0: 0
+expect 1: 1
+expect 0: 0
+expect 1: 1
+expect 1: 1
+expect 1: 1
+expect 1: 1
+expect 1: 1
+expect 0: 0

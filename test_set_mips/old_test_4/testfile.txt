@@ -1,0 +1,21 @@
+int modulo(int a, int b) {
+  if (b == 0) {
+    printf("zerodivisorerror");
+    return (-1);
+  }
+  return (a - a / b * b);
+}
+
+void testmodulo(int a) {
+  modulo(1, 0);
+  printf("expect 0: ", modulo(5, 1));
+  printf("expect 1: ", modulo(5, 2));
+  printf("expect 2: ", modulo(5, 3));
+  printf("expect 1: ", modulo(5, 4));
+  printf("expect 0: ", modulo(5, 5));
+}
+
+void main() {
+  printf("test modulo:");
+  testmodulo(0);
+}

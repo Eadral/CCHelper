@@ -1,0 +1,482 @@
+const int compareequal = 0,
+          comparenotequal = 1,
+          compareless = 2,
+          comparelessequal = 3,
+          comparegreater = 4,
+          comparegreaterequal = 5;
+
+void tokentest_string() {
+  printf("");
+  printf("1");
+  printf("\n\t\f\r\\\'\a\b");
+  printf(" !#$%&'()*+,-./");
+  printf("0123456789:;<=>?");
+  printf("@abcdefghijklmnopqrstuvwxyz");
+  printf("[\]^_`abcdefghijklmnopqrstuvwxyz{|}~");
+}
+
+void tokentest_number() {
+  printf(0);
+  printf(1);
+  printf(123456);
+  printf(-0);
+  printf(+0);
+  printf(+12345);
+  printf(-12345);
+}
+
+void tokentest_character() {
+  printf('+');
+  printf('-');
+  printf('*');
+  printf('/');
+
+  printf('a');
+  printf('b');
+  printf('c');
+  printf('d');
+
+  printf('0');
+  printf('1');
+  printf('2');
+  printf('3');
+}
+
+void tokentest_identifier() {
+  const int _underscorelead = 1;
+  const int underscoretail_ = 2;
+  const int oneapple_2banana_3pineapple = 3;
+
+  printf(_underscorelead);
+  printf(underscoretail_);
+  printf(oneapple_2banana_3pineapple);
+}
+
+void tokentest_caseignored() {
+  const int all_upper_int_constant = 1;
+  printf(all_upper_int_constant);
+}
+
+void test_binop() {
+  const int intconstant = 1;
+  const char charconstant = 'a';
+
+  printf(intconstant + charconstant);
+  printf(intconstant - charconstant);
+  printf(intconstant * charconstant);
+  printf(intconstant / charconstant);
+}
+
+void test_parenexpr() {
+  printf("deeply nested parenexpr", (((((((((1))))))))));
+  printf((1) + (2) * ((3) - (1) / (1 * 3)) - (1 + (3 * 4)));
+}
+
+void test_unaryop() {
+  const int intconstant = 1;
+  const char charconstant = 'a';
+
+  printf(-intconstant);
+  printf(+intconstant);
+  printf(-charconstant);
+  printf(+charconstant);
+  printf(-(-intconstant));
+  printf(+(+intconstant));
+  printf(-(-(-(intconstant))));
+}
+
+void test_subscript() {
+  int intarray[2];
+  char chararray[2];
+
+  printf(intarray[1]);
+  printf(chararray[1]);
+}
+
+void test_functionvoid_void() {}
+
+int test_functionint_int(int int1) {
+  return(int1);
+}
+
+char test_functionchar_intchar(int int1, char char2) {
+  return(char2);
+}
+
+int test_functionint_charcharchar(char char1, char char2, char char3) {
+  return(1);
+}
+
+void test_call() {
+  test_functionvoid_void();
+  test_functionint_int(1);
+  test_functionchar_intchar(1, 'a');
+  test_functionint_charcharchar('a', 'b', 'c');
+}
+
+void test_expr() {
+  int singleintvariable, intarray[2];
+
+  singleintvariable = 1;
+  intarray[0] = 1;
+  intarray[1] = 2;
+
+  printf((singleintvariable *
+        ((singleintvariable - 2) /
+         ((singleintvariable +
+           intarray[intarray[singleintvariable]]) + intarray[singleintvariable]))));
+
+  printf((singleintvariable + 1) * (intarray[singleintvariable * 2] * 2));
+
+  printf(intarray[0 *
+        (singleintvariable *
+         singleintvariable * singleintvariable)]);
+
+  printf(intarray[0 * (intarray[singleintvariable] * 4) +
+         singleintvariable - singleintvariable]);
+}
+
+void test_empty() {
+  int i;
+  ;
+  {}
+  ; ; ;
+  { ; ; ; }
+  { {} {} {} }
+  {{{}}}
+  {{{}}{}{}}
+  { ; { ; }}
+
+  while (1) ;
+  while (1) {}
+
+  if (1) ;
+  if (1) {}
+
+  for (i = 1; i; i = i + 1) ;
+  for (i = 1; i; i = i + 1) {}
+}
+
+void test_read() {
+  int singleintvariable;
+  char singlecharvariable;
+  int _1, _2, _3;
+  char _4, _5, _6;
+
+  scanf(singleintvariable);
+  scanf(singlecharvariable);
+  scanf(_1, _2, _3);
+  scanf(_4, _5, _6);
+}
+
+void test_write() {
+  const int intconstant = 1;
+  int intarray[2];
+
+  printf("singlestring");
+  printf(intarray[intconstant] + intarray[intconstant]);
+  printf("stringandexpression",
+         intconstant * intarray[intarray[intconstant]]);
+}
+
+void test_return_void() {
+  return;
+}
+
+char test_return_char() {
+  const char charconstant = 'a';
+  char chararray[2];
+  char charvariable;
+
+  return(charvariable);
+  return(chararray[1]);
+  return(charconstant);
+  return(test_return_char());
+  return('a');
+}
+
+int test_return_int() {
+  const int intconstant = 1;
+  int intarray[2];
+  int intvariable;
+
+  return(intconstant);
+  return(intvariable);
+  return(test_return_int());
+  return(intarray[1]);
+  return(intarray[(intvariable)]);
+  return(1);
+}
+
+void test_compound_empty() {
+
+}
+
+void test_compound_noconstdecl() {
+  int intvariable;
+  printf(intvariable);
+}
+
+void test_compound_novardecl() {
+  const int intconstant = 1;
+  printf(intconstant);
+}
+
+void test_compound_nostmts() {
+  const int intconstant = 1;
+  int intvariable;
+}
+
+void test_if(int number) {
+  if (number + number * number / 2) {
+    printf("condition ::= expr");
+  }
+  if (number + 1 <= 2 * number) {
+    printf("condition ::= expr compareop expr");
+  }
+}
+
+void test_for() {
+  const int limit = 10;
+  int i;
+
+  printf("incremental for");
+  for (i = 0; i < limit; i = i + 1) {
+    printf("i = ", i);
+  }
+
+  printf("decremental for");
+  for (i = limit; i >= 0; i = i - 1) {
+    printf("i = ", i);
+  }
+
+  printf("for: execute only once");
+  for (i = 0; i > limit; i = i - 1) {
+    printf("i = ", i);
+  }
+}
+
+void test_while() {
+  const int limit = 10;
+  int i;
+
+  printf("incremental while");
+  i = 0;
+  while (i < limit) {
+    printf("i = ", i);
+    i = i + 1;
+  }
+
+  printf("decremental while");
+  i = limit;
+  while (i >= 0) {
+    printf("i = ", i);
+    i = i - 1;
+  }
+
+  i = 0;
+  while (i > limit) {
+    printf("never while");
+  }
+
+}
+
+void test_assign() {
+  int singleintvariable, intarray[2];
+
+  singleintvariable = 1;
+  intarray[0] = 1;
+  intarray[1] = 2;
+}
+
+void test_stmt() {
+  int i;
+
+  if (1) {
+    if (2) {
+      if (3) {
+        printf("if if if");
+      } else {
+        printf("if if else");
+      }
+    } else {
+      printf("if else");
+    }
+  } else {
+    printf("else");
+  }
+
+  while (1) {
+    while (2) {
+      while (3) {
+        printf("while while while");
+      }
+      if (3) {
+        printf("while while if");
+        for (i = 0; i < 4; i = i + 1) {
+          printf("while while if for");
+        }
+      }
+    }
+
+    for (i = 0; i < 2; i = i + 1) {
+      for (i = 0; i < 3; i = i + 1) {
+        for (i = 0; i < 4; i = i + 1) {
+          printf("while for for for");
+          if (5) {
+            printf("while for for for if");
+          }
+        }
+      }
+    }
+
+    printf("while");
+
+    if (2) {
+      printf("while if");
+      while (3) {
+        while (4) {
+          for (i = 0; i < 5; i = i + 1) {
+            printf("while if while while for");
+          }
+        }
+      }
+    }
+  }
+}
+
+int threewayscompare(int a, int b) {
+  if (a > b) return(1);
+  if (a < b) return(-1);
+  return(0);
+}
+
+int richcompare(int a, int b, int compareop) {
+  int order;
+
+  order = threewayscompare(a, b);
+  if (compareop == compareequal) {
+    if (order == 0) return(1); else return(0);
+  }
+  else if (compareop == compareless) {
+    if (order == -1) return(1); else return(0);
+  }
+  else if (compareop == comparegreater) {
+    if (order == 1) return(1); else return(0);
+  }
+  else if (compareop == comparenotequal) {
+    order = richcompare(a, b, compareequal);
+    if (order) return(0); else return(1);
+  }
+  else if (compareop == comparelessequal) {
+    order = richcompare(a, b, comparegreater);
+    if (order) return(0); else return(1);
+  }
+  else if (compareop == comparegreaterequal) {
+    order = richcompare(a, b, compareless);
+    if (order) return(0); else return(1);
+  }
+  else {
+    printf("unknown compareop: ", compareop);
+    return(-1);
+  }
+  return(-1);
+}
+
+void printcompareop(int op) {
+  if (op == compareequal)
+    printf("compareequal");
+  else if (op == comparenotequal)
+    printf("comparenotequal");
+  else if (op == compareless)
+    printf("compareless");
+  else if (op == comparelessequal)
+    printf("comparelessequal");
+  else if (op == comparegreater)
+    printf("comparegreater");
+  else if (op == comparegreaterequal)
+    printf("comparegreaterequal");
+  else
+    printf("unknown compareop");
+}
+
+void printallcompareop() {
+  int i;
+  for (i = 0; i < 6; i = i + 1) {
+    printcompareop(i);
+    printf(i);
+  }
+}
+
+void printresult(int bool) {
+  if (bool)
+    printf("result: true");
+  else
+    printf("result: false");
+}
+
+void main() {
+  int a, b, compareop;
+  int result;
+
+  printallcompareop();
+  scanf(a, b);
+
+  scanf(compareop);
+
+  result = richcompare(a, b, compareop);
+  if (result < 0) return;
+
+  printcompareop(compareop);
+  printresult(result);
+
+  scanf(a, b);
+
+  scanf(compareop);
+
+  result = richcompare(a, b, compareop);
+  if (result < 0) return;
+
+  printcompareop(compareop);
+  printresult(result);
+
+  scanf(a, b);
+
+  scanf(compareop);
+
+  result = richcompare(a, b, compareop);
+  if (result < 0) return;
+
+  printcompareop(compareop);
+  printresult(result);
+
+  scanf(a, b);
+
+  scanf(compareop);
+
+  result = richcompare(a, b, compareop);
+  if (result < 0) return;
+
+  printcompareop(compareop);
+  printresult(result);
+
+  scanf(a, b);
+
+  scanf(compareop);
+
+  result = richcompare(a, b, compareop);
+  if (result < 0) return;
+
+  printcompareop(compareop);
+  printresult(result);
+
+  scanf(a, b);
+
+  scanf(compareop);
+
+  result = richcompare(a, b, compareop);
+  if (result < 0) return;
+
+  printcompareop(compareop);
+  printresult(result);
+}

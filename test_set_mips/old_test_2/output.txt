@@ -1,0 +1,10 @@
+test iterativebinarysearch:
+expected 1: 1
+expected 5: 5
+expected 7: 7
+expected -1: -1
+test recursivebinarysearch:
+expected 1: 1
+expected 5: 5
+expected 7: 7
+expected -1: -1

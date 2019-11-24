@@ -1,0 +1,34 @@
+int modulo(int a, int b) {
+  if (b == 0) {
+    printf("zerodivisionerror");
+    return (-1);
+  }
+  return (a - a / b * b);
+}
+
+int fastpower(int a, int b) {
+  int result;
+  result = 1;
+  while (b != 0) {
+    if (modulo(b, 2) == 1) {
+      result = result * a;
+    }
+    a = a * a;
+    b = b / 2;
+  }
+  return (result);
+}
+
+void testfastpower(int a) {
+  printf("fastpower:");
+  printf("expect 0: ", fastpower(0, 2));
+  printf("expect 1: ", fastpower(1, 0));
+  printf("expect 4: ", fastpower(2, 2));
+  printf("expect 8: ", fastpower(2, 3));
+  printf("expect 1024: ", fastpower(2, 10));
+}
+
+void main() {
+  printf("test fastpower:");
+  testfastpower(0);
+}

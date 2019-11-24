@@ -1,0 +1,4 @@
+test linearsearch:
+expected 0: 0
+expected 9: 9
+expected -1: -1

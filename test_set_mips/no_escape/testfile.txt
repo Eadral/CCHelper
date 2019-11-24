@@ -1,0 +1,6 @@
+void main() {
+
+    printf("next line\n");
+    printf("no interval");
+
+}

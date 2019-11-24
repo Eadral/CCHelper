@@ -1,0 +1,59 @@
+int intfromchar(char chararg) {
+  return((chararg));
+}
+
+int isdigit(char charval) {
+  int intval;
+  intval = intfromchar(charval);
+
+  if (intfromchar('0') <= intval)
+  if (intfromchar('9') >= intval) return(1);
+  return(0);
+}
+
+int isalpha(char charval) {
+  int intval;
+  intval = intfromchar(charval);
+
+  if (intfromchar('a') <= intval)
+  if (intfromchar('z') >= intval)
+    return(1);
+
+  if (intfromchar('a') <= intval)
+  if (intfromchar('z') >= intval)
+    return(1);
+
+  return(0);
+}
+
+int isalnum(char charval) {
+  if (isdigit(charval)) return(1);
+  if (isalpha(charval)) return(1);
+  return(0);
+}
+
+void testisdigit() {
+  printf("expect 0: ", isdigit('a'));
+  printf("expect 0: ", isdigit('a'));
+  printf("expect 1: ", isdigit('2'));
+}
+
+void testisalpha() {
+  printf("expect 0: ", isalpha('1'));
+  printf("expect 1: ", isalpha('b'));
+  printf("expect 1: ", isalpha('b'));
+}
+
+void testisalnum() {
+  printf("expect 1: ", isalnum('1'));
+  printf("expect 1: ", isalnum('b'));
+  printf("expect 1: ", isalnum('b'));
+  printf("expect 0: ", isalnum('_'));
+}
+
+void main() {
+  printf("test ctypes:");
+  testisdigit();
+  testisalpha();
+  testisalnum();
+}

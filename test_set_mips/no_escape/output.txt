@@ -1,0 +1,2 @@
+next line\n
+no interval

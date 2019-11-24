@@ -1,0 +1,24 @@
+compareequal
+0
+comparenotequal
+1
+compareless
+2
+comparelessequal
+3
+comparegreater
+4
+comparegreaterequal
+5
+compareequal
+result: true
+comparenotequal
+result: true
+compareless
+result: false
+comparelessequal
+result: true
+comparegreater
+result: true
+comparegreaterequal
+result: true

@@ -1,0 +1,14 @@
+void main() {
+    int a[10];
+    int b[10];
+    int i;
+
+    for (i = 0; i < 10; i=i+1) {
+        a[i] = i;
+        b[i] = a[i] * a[i];
+        printf(a[i]);
+        printf(b[i]);
+    }
+
+
+}
