@@ -65,6 +65,9 @@ def unit(dir_name, test_set):
 
 if __name__ == "__main__":
     # unit("zyc", "test_set_mips")
+    if not os.path.exists("outputfiles"):
+        os.mkdir("outputfiles")
+
     if len(sys.argv) <= 3:
         unit(sys.argv[1], sys.argv[2])
     else:

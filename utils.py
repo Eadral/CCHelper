@@ -42,7 +42,7 @@ def get_mips_output(dir_name, test, outputname="mips.txt"):
     rnd = time.time()
     shutil.copy(os.path.join(dir_name, outputname), "mips.asm")
     shutil.copy(os.path.join(test, "input.txt"), "input.txt")
-    os.system("timeout.exe 5000 java -jar mars.jar nc ic mips.asm < input.txt > output.txt")
+    os.system("timeout.exe 8000 java -jar mars.jar nc ic mips.asm < input.txt > output.txt")
     os.system("if errorLevel 1 echo TLE\n-1 > output.txt")
     # os.system("timeout /t 5")
     # os.system("taskkill /im java.exe /f")
