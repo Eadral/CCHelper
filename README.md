@@ -1,6 +1,6 @@
 # CCHelper
 
-A Helper of Compiler Course in Beihang University
+A Helper of the Compiler Course in Beihang University
 
 
 
