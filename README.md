@@ -6,7 +6,11 @@ A Helper of Compiler Course in Beihang University
 
 ## Usage 
 
-`python mips_test.py [dir] test_set_mips`
+`dir`: a directory that has your exe file 
+
+MIPS test: `python mips_test.py [dir] test_set_mips`
+
+Grammar test: `python pat.py testfiles_grammar [dir] [dir] [dir...]`
 
 ## FAQ
 
