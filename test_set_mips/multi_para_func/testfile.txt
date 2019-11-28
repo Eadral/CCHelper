@@ -1,4 +1,4 @@
-int prt(int a, int b, int c) {
+void prt(int a, int b, int c) {
     printf(a);
     printf(b);
     printf(c);
