@@ -34,7 +34,7 @@ def run_unit(dir_name, test, test_set, option=None):
             if not os.path.exists(ref_cycles_path):
                 os.system("echo {} > {}".format(cycles, ref_cycles_path))
             ref_cycles = int(open(ref_cycles_path).readline())
-            score = cycles / ref_cycles
+            score = ref_cycles / cycles
             global cycles_sum, score_sum
             cycles_sum += cycles
             score_sum += score * cycles
