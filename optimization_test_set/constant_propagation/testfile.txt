@@ -1,0 +1,15 @@
+void main() {
+    int a, b, c, d, e, f, g, h, i, j, k;
+    a = 1;
+    b = 2;
+    c = 3 * 4;
+    d = 4 - 2;
+    e = 5;
+    f = 10 + 6 / 2;
+    g = e + f;
+    h = e * f;
+    i = 9 + h;
+    j = i;
+    k = i + i;
+    printf(k);
+}
