@@ -2,7 +2,10 @@
 
 A Helper of the Compiler Course in Beihang University
 
+## Features
 
+- Support Windows and Linux.
+- Score system for optimization.
 
 ## Usage 
 
