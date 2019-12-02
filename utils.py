@@ -1,6 +1,7 @@
 import os
 import shutil
 import time
+import platform
 
 outputfile_dir = "outputfiles"
 
@@ -21,7 +22,10 @@ def get_exe_output(dir_name, testfile, outputname, redirect=False):
     if os.path.exists(os.path.join(dir_name, outputname)):
         os.remove(os.path.join(dir_name, outputname))
     os.chdir(dir_name)
-    os.system("{} > output.txt < testfile.txt".format(exe_path) if redirect else exe_path)
+    if platform.system() == "Linux":
+        os.system("./{} > output.txt < testfile.txt".format(exe_path) if redirect else exe_path)
+    else:
+        os.system("{} > output.txt < testfile.txt".format(exe_path) if redirect else exe_path)
     os.chdir("..")
     rnd = time.time()
     outputfile_name = "output_{}.txt".format(dir_name)
@@ -37,12 +41,18 @@ def get_mips_output(dir_name, test, outputname="mips.txt"):
     if os.path.exists(os.path.join(dir_name, outputname)):
         os.remove(os.path.join(dir_name, outputname))
     os.chdir(dir_name)
-    os.system(exe_path)
+    if platform.system() == "Linux":
+        os.system("./{}".format(exe_path))
+    else:
+        os.system(exe_path)
     os.chdir("..")
     rnd = time.time()
     shutil.copy(os.path.join(dir_name, outputname), "mips.asm")
     shutil.copy(os.path.join(test, "input.txt"), "input.txt")
-    os.system("timeout.exe 8000 java -jar mars.jar nc ic mips.asm < input.txt > output.txt")
+    if platform.system() == "Linux":
+        os.system("DISPLAY= timeout 8 java -jar mars.jar nc ic mips.asm < input.txt > output.txt")
+    else:
+        os.system("timeout.exe 8000 java -jar mars.jar nc ic mips.asm < input.txt > output.txt")
     os.system("if errorLevel 1 echo TLE\n-1 > output.txt")
     # os.system("timeout /t 5")
     # os.system("taskkill /im java.exe /f")
