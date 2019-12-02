@@ -2,10 +2,17 @@ const int t = 10;
 
 void main() {
     
-    const int x = 3;
-    const int y = 4;
+    const int x = 3, x1 = -4, x2 = 5, x3 = -6;
+    const int y = -4, y1 = 2, y2 = 4, y3 = -3;
     int z;
     printf(x);
+    printf(x1);
+    printf(x2);
+    printf(x3);
     z = x + y + t;
     printf(z);
+    printf(y);
+    printf(y1);
+    printf(y2);
+    printf(y3);
 }
