@@ -9,7 +9,7 @@ A Helper of the Compiler Course in Beihang University
 
 ## Usage 
 
-`dir`: a directory that has your exe file 
+`dir`: a directory that has your `.exe` or `.out` file 
 
 MIPS test: `python mips_test.py [dir] test_set_mips`
 
