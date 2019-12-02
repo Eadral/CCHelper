@@ -12,7 +12,7 @@ def get_testfiles(testfile_dir):
 
 def get_exe_path(dir_name):
     for name in os.listdir(dir_name):
-        if name.endswith(".exe"):
+        if name.endswith(".exe") or name.endswith(".out"):
             return name
 
 
