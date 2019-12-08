@@ -28,6 +28,9 @@ def run_unit(dir_name, test, test_set, option=None):
         ref_cycles_path = os.path.join(test_set, test, "ref_cycles")
 
         lhs_out = remove_space(lhs_out)
+        if not os.path.exists(output_name):
+            with open(output_name, "w") as f:
+                f.writelines(lhs_out)
         rhs_out = remove_space(open(output_name).readlines())
 
         if operator.eq(lhs_out, rhs_out):

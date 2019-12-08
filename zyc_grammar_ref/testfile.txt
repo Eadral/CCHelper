@@ -1,72 +1,9 @@
-int aan, bn, cs2;
-char cch;
-int fibo(int a,int  n) {
-    int sum;
-    sum = 0;
-    while (sum < n) {
-        a = a*2 +1;
-        n = n + 1;
-    }
-    return (a);
-}
-void p(char a) {
-    printf(a);
-    printf("\n");
-    printf("aan");
-    printf("\n");
-}
+const int const_int_0_1 = 0, const_int_0_2 = +0, const_int_0_3 = -0;
+const int Const_int_1 = 295, const_int_2 = +3, const_int_3 = -15;
+const char const_char_1 = '_', const_char_2 = '+', const_char_3 = '*';
+const char Const_char_4 = 'a', const_char_5 = 'B', const_char_6 = '9', const_char_7 = '0';
 
-void pp() {
-    printf("\n");
-}
 
-void main () {
-    const int a1 = 1, a2 = +2,b1= -3;
-    const char c = 'c',d = '2';
-    int b2, c1, s1dD2a, an[10], bn[2], n;
-    char cn[3], dd,dn[5];
-    if (-a1 + b1 <= a2) {
-        
-    }
-    else {
-        while ((c) == (d)) ;
-    }
-    if(a1-b1 >=2);
-    do an[0] = 1;
-    while ((c) != (c));
-    for(n=0;n < 2; n = n + 1) {
-        scanf(dd);
-        printf(d);
-    }
-    for(b2 = 2;b2;b2 = b2-1) {
-        ;
-    }
-    do aan = 1;
-    while (0);
-
-    while (231 - 231 * 33 * fibo(12, a1))
-        ;
-
-    if(1 * 2 * (2 - 2) ) {
-        if(2) ;
-    } else {
-        if (fibo(1, 2));
-    }
-    an[5] = a1 * 21 -2;
-    scanf(c1,b2);
-    printf("dhsd.,./");
-    printf(a1 + b1);
-    b2 = fibo(a1, a2);
-    p(d);
-    aan = b2;
-    bn[1] = -b1 + a1;
-    aan = an[5+1-a2] +( 0 * 1);
-    dn[1] = '+';
-    printf(dn[1]);
-    printf("dawheduaw", 3 + a1);
-    printf(a2 + a1 -1);
-    do pp();
-    while (fibo(1, -1))
-cn[1] = '*';
-    return;
+void main() {
+	printf(Const_int_1);
 }
