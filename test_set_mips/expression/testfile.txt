@@ -1,0 +1,60 @@
+const int a = 10, b = 20, c = -10 ,d = 0;
+const char aa = 'a', bb = 'b';
+int e;
+char f;
+int g[5];
+char h[5];
+int add(int a, int b){
+	return (a-b);
+}
+int add3(int a, int b, int c){
+	return (a+b+c);
+}
+void main(){
+	int ee;
+	e = -a + b;
+	printf(e);
+	e = +a + b;
+	printf(e);
+	e = a * b / c;
+	printf(e);
+	e = --20;
+	printf(e);
+	e = +-20;
+	printf(e);
+	f = 'm';
+	printf(f);
+	f = '1';
+	printf(f);
+	f = aa;
+	printf(f);
+	e = -(+(-c+b)/10)*(--3*6);
+	printf(e);
+	g[0] = 1;
+	g[1] = 2;
+	g[2] = 3;
+	g[3] = 4;
+	g[4] = 5;
+	printf(g[0]+g[1]+g[2]+g[3]+g[4]);
+	printf(g[3]);
+	printf(g[4]);
+	g[3] = 20;
+	g[4] = -100;
+	printf(g[3]);
+	printf(g[4]);
+	printf(-g[1]*g[2]*(g[3]-g[4]-(-1+119)));
+	g[2] = add(g[3],g[4]);
+	printf(g[2]);
+	printf(add(g[0],g[1]));
+	h[0] = 'a';
+	h[1] = '2';
+	h[2] = 'c';
+	h[3] = 'd';
+	h[4] = 'e';
+	printf(h[3]);
+	printf(add3(g[3],g[3],g[4]));
+	ee = --1+2*(g[3]+g[4]-(h[1]-'0'))*add3(-3,-3,-1);
+	printf(ee);
+
+	return;
+}

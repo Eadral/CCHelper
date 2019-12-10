@@ -1,0 +1,10 @@
+int add (int a ,int b){
+	int r ;
+	r = a+b;
+	return (r);
+}
+
+void main(){
+	printf(add(9,add(2,add(2,3))));
+	return;
+}

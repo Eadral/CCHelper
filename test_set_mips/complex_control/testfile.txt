@@ -1,0 +1,47 @@
+int a;
+int i,j,k;
+
+int test(int a, int b){
+    printf("******");
+    printf(i);
+    printf(j);
+    printf(k);
+    if(i>=j){
+    	    for(i=0;i<10;i=i+1){
+    	        if(i!=3){
+    	        printf(i);
+    	        }else{
+    	            for(k=0;k<3;k=k+1){
+    	            printf("333333");
+    	            }
+    	        }
+    	    }
+    	}else{
+    	    for(i=9;i>=0;i=i-1){
+    	        printf(i);
+    	    }
+    	}
+    return(-(a+b)-b);
+}
+
+void main(){
+	i = 10;
+	j = 20;
+	k = 30;
+	if(i<j){
+	    for(i=0;i<10;i=i+1){
+	        if(i!=3){
+	        printf(i);
+	        }else{
+	            for(k=0;k<3;k=k+1){
+	            printf("333333");
+	            }
+	        }
+	    }
+	}else{
+	    for(i=9;i>=0;i=i-1){
+	        printf(i);
+	    }
+	}
+	printf(test(1,2));
+}

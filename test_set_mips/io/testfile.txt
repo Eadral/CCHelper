@@ -1,0 +1,35 @@
+const int a = 14, b = 28;
+const char c = 'c', d = 'd';
+int e,f;
+char g,h;
+void main(){
+	int aa[3],i,sum,tmp;
+	e = 20;
+	f = 30;
+	g = 'g';
+	h = 'h';
+	printf("test1");
+	printf("test2",'g'+'h');
+	printf(g+h);
+	printf("test3",a*(b-(((c)))));
+	printf(a*(b-c));
+	printf("t e s t 4");
+
+	sum = 0;
+	for(i=0;i<3;i=i+1){
+		scanf(tmp);
+		aa[i] = tmp;
+		sum = sum+aa[i];
+	}
+	printf(sum);
+
+	printf(e+f);
+	scanf(e,f);
+	printf(e);
+	printf(f);
+	scanf(e,f,g,h);
+	printf(e);
+	printf(f);
+	printf(g);
+	printf(h);
+}

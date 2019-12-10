@@ -30,7 +30,9 @@ def run_unit(dir_name, test, test_set, option=None):
         lhs_out = remove_space(lhs_out)
         if not os.path.exists(output_name):
             with open(output_name, "w") as f:
-                f.writelines(lhs_out)
+                for line in lhs_out:
+                    f.write(line)
+                    f.write("\n")
         rhs_out = remove_space(open(output_name).readlines())
 
         if operator.eq(lhs_out, rhs_out):

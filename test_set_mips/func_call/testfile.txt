@@ -1,0 +1,28 @@
+const int hide = 16;
+const char a = 'a', b = 'b';
+int c;
+char d;
+void v0(int a, char b){
+	printf(a);
+	printf(b);
+}
+int i0(int a, char b){
+	return(a*(b-'0'));
+}
+char c0(char a, char b, char c){
+	printf(a+b-2*'0');
+	return(c);
+}
+
+void main(){
+	const char a = '4';
+	const char b = 'z';
+	int c;
+	char d;
+	v0(-64, b);
+	c = i0(4, a);
+	printf(c);
+	d = c0('4','5','v');
+	printf(d);
+	return;
+}
