@@ -1,6 +1,5 @@
 const int a = 10, b = 20, c = -10 ,d = 0;
 const char aa = 'a', bb = 'b';
-int e;
 char f;
 int g[5];
 char h[5];
@@ -11,6 +10,7 @@ int add3(int a, int b, int c){
 	return (a+b+c);
 }
 void main(){
+	int e;
 	int ee;
 	e = -a + b;
 	printf(e);
