@@ -45,7 +45,7 @@ def get_mips_output(dir_name, test, outputname="mips.txt"):
         os.system("timeout 8 ./{} 1>out 2>err".format(exe_path))
     else:
         # print("..\\timeout.exe 8000 {} 1>out 2>err".format(exe_path))
-        os.system("..\\timeout.exe 8000 {} 1>out 2>err".format(exe_path))
+        os.system("{} 1>out 2>err".format(exe_path))
     os.chdir("..")
     rnd = time.time()
     shutil.copy(os.path.join(dir_name, outputname), "mips.asm")

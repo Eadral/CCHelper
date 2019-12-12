@@ -1,0 +1,15 @@
+int mod(int x, int y) {
+   x=x-x/y*y;
+
+   return (x) ;
+}
+
+void main() {
+	int a, b, c;
+
+	a = 13;
+	b = 3;
+	c = mod(a, b);
+	printf(c);
+
+}
