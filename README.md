@@ -14,9 +14,18 @@ MIPS test: `python mips_test.py [dir] test_set_mips`
 
 Single MIPS test: `python mips_test.py [dir] test_set_mips [testfilename]`
 
+Performance test: ` python mips_test.py [dir] optimization_test_set speed`
+
 Grammar test: `python pat.py testfiles_grammar [dir] [dir] [dir...]`
 
-`dir`: a directory that has your `.exe` or `.out` file 
+`dir`: a directory in `CCHelper` that has your `.exe` or `.out` file 
+
+### Example
+
+```shell script
+python mips_test.py zyc_mips_ref test_set_mips
+python mips_test.py zyc_mips_ref optimization_test_set speed
+```
 
 ## FAQ
 
