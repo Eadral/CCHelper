@@ -1,0 +1,121 @@
+int line;
+int chess[64];
+int count_chess,count_hanno,chess_record_num,hanno_record_num;
+int hanno_flag;
+
+int hannuo(int n, char one, char two, char three)
+{
+    if(hanno_flag == 1){
+        return (0);
+    }
+    if (n == 1){
+        count_hanno = count_hanno + 1;
+    }
+    else
+    {
+        hannuo(n - 1, one, three, two);
+        count_hanno = count_hanno + 1;
+        if(count_hanno == hanno_record_num){
+            printf("Step ",hanno_record_num);
+            printf("from ",one);
+            printf("to ",three);
+            hanno_flag = 1;
+        }
+        hannuo(n - 1, two, one, three);
+    }
+    return (0);
+}
+
+int Fibonacci(int n){
+    if(n < 1){
+        return (0);
+    }else{
+        if (n == 1){
+            return (1);
+        }else{
+            return (Fibonacci(n-1)+Fibonacci(n-2));
+        }
+    }
+}
+
+
+int Get_reminder(int n){
+    int base;
+    base = 1 ;
+    if(n < 10){
+        return (n);
+    }
+    while(n > base){
+        base = base * 10;
+    }
+    base = base / 10;
+    while(n > base){
+        n = n - base;
+    }
+    return (Get_reminder(n));
+
+}
+
+int Factorial(int i){
+    if(i > 1){
+        return (i * Factorial(i-1));
+    }
+    else{
+        return (1);
+    }
+}
+
+int Sum(int n){
+    if(n < 1){
+        return (n);
+    }else{
+        return (n + Sum(n - 1));
+    }
+}
+
+int Sum_Factorial(int n){
+    if (n == 1){
+        return (1);
+    }else{
+        return (Factorial(n)+Sum_Factorial(n - 1));
+    }
+}
+
+int Permutation(int m,int n){
+    if(m == 0){
+        return (1);
+    }else{
+        if (n == 0){
+            return (1);
+        }else{
+            return (Permutation(m-1,n)+ Permutation(m,n-1));
+        }
+    }
+
+}
+
+void main()
+{
+    int hanno_num;
+    scanf(line);
+    scanf(hanno_num);
+    scanf(hanno_record_num);
+
+    count_chess = 0;
+    count_hanno = 0;
+    hanno_flag = 0;
+
+    hannuo(hanno_num,'A','B','C');
+    printf( count_hanno);
+
+    printf(Fibonacci(4));
+    printf(Factorial(5));
+
+    printf(Sum(10));
+
+    printf(Sum_Factorial(5));
+
+    printf(Get_reminder(3464));
+
+    printf(Permutation(8,5));
+}
