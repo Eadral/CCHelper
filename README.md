@@ -18,6 +18,8 @@ Performance test: ` python mips_test.py [dir] optimization_test_set speed`
 
 Grammar test: `python pat.py testfiles_grammar [dir] [dir] [dir...]`
 
+Error test: `python test.py [dir] test_set_error`
+
 `dir`: a directory in `CCHelper` that has your `.exe` or `.out` file 
 
 ### Example
