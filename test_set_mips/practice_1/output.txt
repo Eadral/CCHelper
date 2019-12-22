@@ -1,0 +1,10 @@
+Caculate of const is -960
+In function 1,Middle_Number is 475
+In function 2,Middle_Number is 475
+In function 3,Middle_Number is 475
+Middle_Number Answer Correct!
+In function 1,Nearest point is 29
+In function 2,Nearest point is 29
+In function 3,Nearest point is 29
+Nearest_Point Answer Correct!
+All Cyclic Procedure Right!
