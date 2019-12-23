@@ -33,7 +33,7 @@ def unit(dir_name, test_set):
                 continue
         # error
         print(Fore.LIGHTRED_EX + "failed: {}".format(test))
-        if lhs_out[0] == rhs_out[0]:
+        if lhs_out[0] != rhs_out[0]:
             print(Fore.LIGHTRED_EX + "first line error: expected '{}' while found '{}'".format(rhs_out[0], lhs_out[0]))
             continue
         for line in rhs_out:
